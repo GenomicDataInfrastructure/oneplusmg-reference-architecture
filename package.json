@@ -1,0 +1,32 @@
+{
+  "name": "oneplusmg-reference-architecture",
+  "version": "0.0.0",
+  "description": "Reference Architecture for 1+MG Initiative",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture/issues"
+  },
+  "homepage": "https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture#readme",
+  "devDependencies": {
+    "@types/micromatch": "^4.0.9",
+    "@types/node": "^20.14.10",
+    "gray-matter": "^4.0.3",
+    "mermaid": "^11.6.0",
+    "micromatch": "^4.0.7",
+    "vitepress": "^1.2.2",
+    "vitepress-plugin-mermaid": "^2.0.17"
+  }
+}

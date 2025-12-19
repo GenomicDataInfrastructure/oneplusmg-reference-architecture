@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2024 Contributor Covenant
+SPDX-FileCopyrightText: 2025 Contributor Covenant
 SPDX-FileContributor: PNED G.I.E.
 
 SPDX-License-Identifier: CC-BY-4.0

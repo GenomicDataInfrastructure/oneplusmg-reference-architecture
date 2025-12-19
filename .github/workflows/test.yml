@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2024 PNED G.I.E.
+# SPDX-FileCopyrightText: 2025 PNED G.I.E.
 #
 # SPDX-License-Identifier: Apache-2.0
 
@@ -14,5 +14,5 @@ jobs:
       contents: read
       packages: write
     steps:
-      - uses: actions/checkout@v4
-      - uses: fsfe/reuse-action@v2
+      - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+      - uses: fsfe/reuse-action@676e2d560c9a403aa252096d99fcab3e1132b0f5 # v6.0.0
