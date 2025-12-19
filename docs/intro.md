@@ -3,7 +3,7 @@
 #
 # SPDX-License-Identifier: CC-BY-4.0
 
-sidebar_position: 1
+sidebar_position: 2
 ---
 
 # Tutorial Intro

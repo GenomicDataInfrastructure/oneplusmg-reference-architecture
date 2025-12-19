@@ -56,6 +56,7 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 ## Licenses
 
 This work is licensed under multiple licences:
+
 - All original source code is licensed under [Apache-2.0](./LICENSES/Apache-2.0.txt).
 - All documentation and images are licensed under [CC-BY-4.0](./LICENSES/CC-BY-4.0.txt).
 - For more accurate information, check the individual files.

@@ -3,9 +3,10 @@ SPDX-FileCopyrightText: 2025 PNED G.I.E.
 
 SPDX-License-Identifier: Apache-2.0
 -->
+
 ## 🚀 Pull Request Checklist
 
-- **Title:** 
+- **Title:**
   - `[ ]` A brief, descriptive title for the changes.
 
 - **Description:**
