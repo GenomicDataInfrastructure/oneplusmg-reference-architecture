@@ -3,9 +3,9 @@
 #
 # SPDX-License-Identifier: CC-BY-4.0
 
-sidebar_position: 12
+sidebar_position: 5
 ---
 
-# Glossary
+# Building Block View
 
 To be added soon.

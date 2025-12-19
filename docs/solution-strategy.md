@@ -3,9 +3,9 @@
 #
 # SPDX-License-Identifier: CC-BY-4.0
 
-sidebar_position: 12
+sidebar_position: 4
 ---
 
-# Glossary
+# Solution Strategy
 
 To be added soon.

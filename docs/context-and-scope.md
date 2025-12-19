@@ -3,9 +3,9 @@
 #
 # SPDX-License-Identifier: CC-BY-4.0
 
-sidebar_position: 12
+sidebar_position: 3
 ---
 
-# Glossary
+# Context and Scope
 
 To be added soon.
