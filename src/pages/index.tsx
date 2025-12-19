@@ -7,30 +7,45 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
 
-function HomepageHeader() {
+function Homepage() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro"
-          >
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
+    <div>
+      <header className={clsx("hero hero--primary", styles.heroBanner)}>
+        <div className="container">
+          <Heading as="h1" className="hero__title">
+            {siteConfig.title}
+          </Heading>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <div className={styles.buttons}>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/introduction-and-goals"
+            >
+              Start reading
+            </Link>
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
+      <main>
+        <div className="container margin-vert--lg">
+          <h1>Structure</h1>
+          <span>This document is organized as follows:</span>
+          <ol>
+            <li>
+              <a href="./docs/introduction-and-goals">Introduction and goals</a>. Includes the background, business goals, essential requirements and roles.
+            </li>
+            <li>
+              <a href="./docs/glossary">Glossary</a>. Includes domain terms and acronyms.
+            </li>
+          </ol>
+        </div>
+      </main>
+    </div>
   );
 }
 
@@ -41,10 +56,7 @@ export default function Home(): ReactNode {
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />"
     >
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
+      <Homepage />
     </Layout>
   );
 }

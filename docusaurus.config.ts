@@ -71,13 +71,8 @@ const config: Config = {
         {
           type: "docSidebar",
           sidebarId: "tutorialSidebar",
-          position: "left",
-          label: "Tutorial",
-        },
-        {
-          href: "https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture",
-          label: "GitHub",
           position: "right",
+          label: "Home",
         },
       ],
     },
@@ -85,11 +80,11 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "Home",
           items: [
             {
-              label: "Tutorial",
-              to: "/docs/intro",
+              label: "Introduction and Goals",
+              to: "/docs/introduction-and-goals",
             },
           ],
         },
@@ -97,16 +92,12 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "GitHub",
+              href: "https://github.com/GenomicDataInfrastructure",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "LinkedIn",
+              href: "https://www.linkedin.com/company/gdi-euproject/posts",
             },
           ],
         },

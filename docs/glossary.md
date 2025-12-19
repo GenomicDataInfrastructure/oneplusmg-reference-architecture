@@ -6,8 +6,6 @@
 sidebar_position: 1
 ---
 
-# Introduction and Goals
+# Glossary
 
-## Executive Summary
-
-To be added soon.
+This glossary provides definitions for key terms and acronyms used throughout the documentation.
