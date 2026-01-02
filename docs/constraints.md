@@ -36,6 +36,6 @@ The architectural constraints outlined in this section shape the design decision
 | 3   | Alignment with EHDS          | The architecture must align technically with the European Health Data Space (EHDS) infrastructure (HealthData@EU), specifically regarding the use of DCAT-AP for metadata publication.                                                                   |
 | 4   | National Resource Commitment | The architecture must be deployable and operable within the estimated national resource limit of 5-8 FTEs per node, ensuring feasibility for smaller Member States.                                                                                      |
 | 5   | Scope Limitation (SMPC)      | The development and certification of Secure Multi-Party Computation (SMPC) protocols are currently out of scope for the initial GDI implementation phases; the architecture relies on SPEs for now.                                                      |
-| 6   | Infrastructure Heterogeneity | The architecture must function across diverse environments, including commercial clouds, private government clouds, and academic HPCs.[^1]                                                                                                                   |
+| 6   | Infrastructure Heterogeneity | The architecture must function across diverse environments, including commercial clouds, private government clouds, and academic HPCs.[^1]                                                                                                               |
 
 [^1]: This is the first footnote.
