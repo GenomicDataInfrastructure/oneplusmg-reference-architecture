@@ -37,10 +37,13 @@ function Homepage() {
           <span>This document is organized as follows:</span>
           <ol>
             <li>
-              <a href="./docs/introduction-and-goals">Introduction and goals</a>. Includes the background, business goals, essential requirements and roles.
+              <a href="./docs/introduction-and-goals">Introduction and goals</a>
+              . Includes the background, business goals, essential requirements
+              and roles.
             </li>
             <li>
-              <a href="./docs/glossary">Glossary</a>. Includes domain terms and acronyms.
+              <a href="./docs/glossary">Glossary</a>. Includes domain terms and
+              acronyms.
             </li>
           </ol>
         </div>
