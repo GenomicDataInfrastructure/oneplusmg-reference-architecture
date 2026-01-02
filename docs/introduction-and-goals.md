@@ -46,7 +46,9 @@ The architecture is shaped by specific quality attributes that guide design deci
 | QG4 | Transparency       | Visibility into how data is used and processed.                                                                       | Required for auditing and to maintain the trust of data subjects (citizens).                                                                  |
 | QG5 | Usability          | Streamlined user journeys for researchers and clinicians.                                                             | Reducing the administrative burden of finding data and applying for access (DACs) is key to system uptake.                                    |
 
-## Stakeholder
+## Stakeholders
+
+The stakeholders of the 1+MG Network include all roles and organizations that influence/depend on the architecture documentation, i.e., those who need to understand the architecture, interact with the system, or work with the source code. An overview of the key stakeholders is provided below.
 
 ![System Context](./assets/system_context.drawio.png)
 
