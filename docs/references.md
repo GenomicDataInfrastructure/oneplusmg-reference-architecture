@@ -25,3 +25,9 @@ sidebar_position: 13
 1. GDI Deliverable D2.1 - First analysis of cost elements for the setup of 1+MG infrastructure. (https://zenodo.org/records/10728049)
 1. 1+MG Transparency and Consent Guidance - version for 1+MG Framework (https://zenodo.org/records/8279851)
 1. GDI Deliverable D2.9 - Evaluation of data governance experiences - Report. (https://zenodo.org/records/10069814)
+1. 1+MG Use cases. (https://framework.onemilliongenomes.eu/usecases)
+1. 1+MG and EHDS Alignment. (https://framework.onemilliongenomes.eu/ehds-data-lifecycle)
+1. Cloud computing in population-scale genomics: Strategies, challenges, and future directions. (https://doi.org/10.5734/JGM.2025.22.2.37)
+1. Bridging the European Data Sharing Divide in Genomic Science.
+   (https://doi.org/10.2196/37236)
+1. GA4GH.(https://www.ga4gh.org/our-products/)

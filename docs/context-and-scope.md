@@ -8,4 +8,6 @@ sidebar_position: 3
 
 # Context and Scope
 
-To be added soon.
+## Business context
+
+## Technical context
