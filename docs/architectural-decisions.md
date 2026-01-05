@@ -6,6 +6,6 @@
 sidebar_position: 9
 ---
 
-# Architecture Decisions
+# Architectural Decisions
 
 To be added soon.
