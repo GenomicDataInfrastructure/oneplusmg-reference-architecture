@@ -86,6 +86,47 @@ const config: Config = {
               label: "Introduction and Goals",
               to: "/docs/introduction-and-goals",
             },
+            {
+              label: "Constraints",
+              to: "/docs/constraints",
+            },
+            {
+              label: "Context and Scope",
+              to: "/docs/context-and-scope",
+            },
+            {
+              label: "Solution Strategy",
+              to: "/docs/solution-strategy",
+            }, {
+              label: "Building Block View",
+              to: "/docs/building-block-view",
+            },
+            {
+              label: "Runtime View",
+              to: "/docs/runtime-view",
+            },
+            {
+              label: "Deployment View",
+              to: "/docs/deployment-view",
+            },
+            {
+              label: "Crosscutting Concepts",
+              to: "/docs/crosscutting-concepts",
+            },
+            {
+              label: "Architectural Decisions",
+              to: "/docs/architectural-decisions",
+            },
+            {
+              label: "Quality Requirements",
+              to: "/docs/quality-requirements",
+            }, {
+              label: "Risks and Technical Debt",
+              to: "/docs/risks-and-technical-debt",
+            }, {
+              label: "Glossary",
+              to: "/docs/glossary",
+            },
           ],
         },
         {

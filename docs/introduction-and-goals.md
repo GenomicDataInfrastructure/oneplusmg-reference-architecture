@@ -8,9 +8,7 @@ sidebar_position: 1
 
 # Introduction and Goals
 
-This document provides a comprehensive view on the architecture of the 1+MG Network, following the guidelines of the [arc42](https://arc42.org/) template.
-
-The [1+ Million Genomes (1+MG) initiative](https://framework.onemilliongenomes.eu/) represents an unprecedented pan-European effort to enable secure access to corresponding genomic and clinical data across Europe. The overarching goal is to facilitate better research, personalized healthcare, and health policy-making by making at least one million sequenced genomes accessible for secondary (research) and primary (clinical) use. This reference architecture defines the technical, semantic, and legal frameworks necessary to operationalize this ambition through the Genome European Digital Infrastructure Consortium (Genome EDIC) and the national nodes implemented via the Genomic Data Infrastructure (GDI) project.
+The 1+ Million Genomes (1+MG) initiative[^1] represents an unprecedented pan-European effort to enable secure access to corresponding genomic and clinical data across Europe. The overarching goal is to facilitate better research, personalized healthcare, and health policy-making by making at least one million sequenced genomes accessible for secondary (research) and primary (clinical) use. This reference architecture defines the technical, semantic, and legal frameworks necessary to operationalize this ambition through the Genome European Digital Infrastructure Consortium (Genome EDIC) and the national nodes implemented via the Genomic Data Infrastructure (GDI) project[^2].
 
 This reference architecture provides a high-level blueprint for implementing that vision. It targets technical teams in national genomics programs, policymakers, infrastructure providers, and the emerging Genome EDIC (the central coordinating body for 1+MG) – helping them understand what services each Member State must implement nationally and what services the Genome EDIC must provide centrally to end users.
 
@@ -62,3 +60,9 @@ The stakeholders of the 1+MG Network include all roles and organizations that in
 | Researcher           | Academic scientists and industry partners conducting secondary analysis on genomic cohorts.                                                     | Expect a "one-stop shop" to discover datasets and streamlined access procedures (fast DAC responses) to analyze cross-border data without administrative bottlenecks.                         |
 | Clinician            | Healthcare professionals using genomic data for primary care, diagnosis, and treatment planning.                                                | Require easy-to-use tools to query the network for similar cases or validate variants for rare disease diagnosis and decision support.                                                        |
 | Policymaker          | National ministries and the European Commission providing funding and regulation.                                                               | Need evidence of impact (healthcare improvement, economic efficiency) to justify continued investment and support.                                                                            |
+
+[^1]: European Commission. European '1+ Million Genomes'. (https://digital-strategy.ec.europa.eu/en/policies/1-million-genomes)
+
+[^2]: GDI Project.(https://gdi.onemilliongenomes.eu/)
+
+[^3]: GDI Deliverable D6.3.(https://zenodo.org/records/13920170)
