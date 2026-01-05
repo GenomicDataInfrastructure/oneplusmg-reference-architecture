@@ -108,6 +108,10 @@ function Homepage() {
               <a href="./docs/glossary">Glossary</a>. Important domain and
               technical terms that stakeholders use when discussing the system.
             </li>
+            <li>
+              <a href="./docs/references">References</a>. External documents and
+              resources referenced in this document.
+            </li>
           </ol>
         </div>
       </main>
