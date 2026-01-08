@@ -69,7 +69,7 @@ The stakeholders of the 1+MG Network include all roles and organizations that in
 
 [^4]: GDI Deliverable D2.2 - Infrastructure cost report. (https://zenodo.org/records/11635233)
 
-[^5]: B1MGplus Project.(https://www.cnag.eu/projects/beyond-1-million-genomes-plus)
+[^5]: B1MGplus Project. (https://www.cnag.eu/projects/beyond-1-million-genomes-plus)
 
 [^6]: B1MG Deliverable D1.5 - Stakeholders trust in genomic data sharing landscape analysis. (https://zenodo.org/records/6382431)
 
