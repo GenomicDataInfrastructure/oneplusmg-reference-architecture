@@ -10,7 +10,7 @@ sidebar_position: 2
 
 The architectural constraints outlined in this section shape the design decisions for the 1+MG Network. They are non-negotiable limitations imposed by regulation, politics, or organization.
 
-## 1. Regulatory & Legal Constraints (Must Have)
+## 1. Regulatory & Legal Constraints
 
 | ID      | Constraint                          | Description                                                                                                                                                                                                                                                               |
 | :------ | :---------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -21,7 +21,7 @@ The architectural constraints outlined in this section shape the design decision
 | **L05** | **Data Governance Act (DGA)**       | The framework must support **Data Altruism** mechanisms, allowing citizens to voluntarily donate data for science. Technical workflows must manage specific altruism consent forms and recognized data altruism organizations.[^4]                                        |
 | **L06** | **NIS2 Directive (Cybersecurity)**  | As a "Critical Entity" (Health Sector), the infrastructure must implement state-of-the-art cyber hygiene, mandatory incident reporting (24h warning/72h full report), and supply chain security auditing.[^5]                                                             |
 
-## 2. Political Constraints (The "Why")
+## 2. Political Constraints
 
 | ID      | Constraint                             | Description                                                                                                                                                                                                       |
 | :------ | :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -40,7 +40,7 @@ The architectural constraints outlined in this section shape the design decision
 | ID      | Constraint              | Description                                                                                                                                                                                                            |
 | :------ | :---------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **T01** | **Federated Design**    | **No Central Lake.** Data stays local; Compute moves to data (GA4GH WES). This is a hard architectural constraint derived from L02 and P01.[^10]                                                                       |
-| **T02** | **Open Standards Only** | All interfaces must use open standards (GA4GH Beacon, WES, DRS). Vendor-locked protocols are prohibited to ensure interoperability across 27 nations.[^11]                                                             |
+| **T02** | **Open Standards Only** | All interfaces must use open standards (GA4GH Beacon, WES, DRS). Vendor-locked protocols are prohibited to ensure interoperability across 27 nations.[^11] [^14]                                                             |
 | **T03** | **EHDS Alignment**      | Metadata publication must align with the **DCAT-AP** standard to facilitate future integration with the European Health Data Space (HealthData@EU).[^12]                                                               |
 | **T04** | **Cyber Resilience**    | In line with the Cyber Resilience Act, all software components must be "secure by default" (no default pwds), support automatic updates, and have a disclosed vulnerability handling process (SBOM requirements).[^13] |
 
@@ -69,3 +69,5 @@ The architectural constraints outlined in this section shape the design decision
 [^12]: 1+MG and EHDS Alignment. (https://framework.onemilliongenomes.eu/ehds-data-lifecycle)
 
 [^13]: Cyber Resilience Act. (https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act)
+
+[^14]: GA4GH. (https://www.ga4gh.org/our-products/)
