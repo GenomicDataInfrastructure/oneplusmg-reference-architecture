@@ -6,6 +6,55 @@
 sidebar_position: 8
 ---
 
-# Crosscutting Concepts
+# Cross-cutting Concepts
 
-To be added soon.
+## 1. Data Strategy
+
+### 1.1. Metadata Model (HealthDCAT-AP)
+
+To ensure semantic interoperability and alignment with the **European Health Data Space (EHDS)**, 1+MG adopts the **HealthDCAT-AP 5.0** standard (a health-specific profile of DCAT-AP)[^1] [^2].
+
+**Core Entities:**
+
+- **Catalog:** The collection of datasets held by a Node (`dcat:Catalog`).
+- **Dataset:** A logical grouping of genomic/clinical data (`dcat:Dataset`).
+  - _Must include:_ `healthCategory` (e.g., `Human Genomic Data`).
+  - _Must include:_ `accessRights` (mapped to DPV).
+- **Distribution:** The physical form (`dcat:Distribution`).
+  - _Example:_ VCF File, Beacon API Endpoint, WES Endpoint.
+
+### 1.2. Identifier Schema
+
+All resources within the 1+MG network MUST adhere to the following **Persistent Identifier (PID)** pattern to guarantee global uniqueness across the federation:
+
+**Pattern:** `^(GOE|GDI)-[A-Z]{2}-[A-Z]+-[0-9]+$`
+
+**Segments:**
+
+1.  **Prefix:** `GOE` (Genome of Europe) or `GDI` (Genomic Data Infrastructure).
+2.  **Country:** ISO 3166-1 alpha-2 code (e.g., `FI`, `ES`, `DE`).
+3.  **Type:** Resource type code (e.g., `COHORT`, `DATASET`, `SAMPLE`).
+4.  **Sequential ID:** Numeric identifier.
+
+**Examples:**
+
+- `GDI-FI-COHORT-001` (First cohort from Finland GDI Node)
+- `GOE-ES-SAMPLE-9942` (Genome of Europe sample from Spain)
+
+## 2. Security & Compliance
+
+### 2.1. Controlled Vocabularies
+
+We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and consent status in a machine-readable way.
+
+- `dpv:Consent`: Processing based on explicit data subject consent.
+- `dpv:LegitimateInterest`: Processing based on legitimate interest (secondary use).
+
+### 2.2. Encryption
+
+- **Data at Rest:** All genomic files (VCF/BAM) are encrypted using **Crypt4GH** (standard container format for encrypted genomic data).
+- **Data in Transit:** TLS 1.3 is mandatory for all APIs.
+
+[^1]: GDI Metadata Model Repository. (https://github.com/GenomicDataInfrastructure/gdi-metadata)
+
+[^2]: HealthDCAT-AP Specification. (https://semiceu.github.io/HealthDCAT-AP/releases/5.0.0/)

@@ -17,13 +17,14 @@ The **1+MG Infrastructure** operates as a federated network. It does not store d
 
 ### Communication Partners
 
-| Neighbor                 | Interaction                               | Input/Output                                                                  |
-| :----------------------- | :---------------------------------------- | :---------------------------------------------------------------------------- |
-| **Researcher**           | Discovers data and submits analysis jobs. | **In:** Query / WES Workflow<br/>**Out:** Feasibility Count / Analysis Result |
-| **Clinician**            | Uses data for decision support.           | **In:** Variant Search<br/>**Out:** Variant Interpretation                    |
-| **Data Authority (DAC)** | Approves/Denies access requests.          | **In:** Access Application<br/>**Out:** Approval Token                        |
-| **National Node (GDI)**  | Executes compute and enforces policy.     | **In:** Workload<br/>**Out:** Audit Log                                       |
-| **Genome EDIC**          | Central governance and index.             | **In:** Metadata<br/>**Out:** Catalog View / Trust List                       |
+| Role                     | Interaction                                                                         | Input/Output                                                                  |
+| :----------------------- | :---------------------------------------------------------------------------------- | :---------------------------------------------------------------------------- |
+| **Researcher**           | Discovers data and submits analysis jobs.                                           | **In:** Query / WES Workflow<br/>**Out:** Feasibility Count / Analysis Result |
+| **Clinician**            | Uses data for decision support.                                                     | **In:** Variant Search<br/>**Out:** Variant Interpretation                    |
+| **Data Authority (DAC)** | Approves/Denies access requests.                                                    | **In:** Access Application<br/>**Out:** Approval Token                        |
+| **Data Provider**        | Biobanks/Hospitals that steward the physical data.                                  | **In:** Data Management Plan<br/>**Out:** Raw Genomic Data (Ingested by Node) |
+| **eHealth System**       | National Electronic Health Records (EHR) systems.                                   | **In:** Patient ID<br/>**Out:** Clinical Phenotypes                           |
+| **Genome EDIC (Legal)**  | The legal entity governing the infrastructure (distinct from the software service). | **In:** Governance Policies<br/>**Out:** Compliance Audit Reports             |
 
 ## Technical Context
 
