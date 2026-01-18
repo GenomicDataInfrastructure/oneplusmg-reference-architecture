@@ -6,7 +6,7 @@ SPDX-License-Identifier: CC-BY-4.0
 
 <!-- omit in toc -->
 
-# Contributing to GDI User Portal Front-end
+# Contributing to 1+MG Reference Architecture
 
 First off, thanks for taking the time to contribute! ❤️
 
@@ -37,13 +37,13 @@ All types of contributions are encouraged and valued. See the [Table of Contents
 ## Code of Conduct
 
 This project and everyone participating in it is governed by the
-[GDI User Portal Front-end Code of Conduct](https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture/blob/master/CODE_OF_CONDUCT.md).
+[1+MG Code of Conduct](https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture/blob/master/CODE_OF_CONDUCT.md).
 By participating, you are expected to uphold this code. Please report unacceptable behavior
 to <>.
 
 ## I Have a Question
 
-> If you want to ask a question, we assume that you have read the available [Documentation](https://genomicdatainfrastructure.github.io/gdi-userportal-docs/).
+> If you want to ask a question, we assume that you have read the available [Documentation](https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture/tree/main/docs).
 
 Before you ask a question, it is best to search for existing [Issues](https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture/issues) that might help you. In case you have found a suitable issue and still need clarification, you can write your question in this issue. It is also advisable to search the internet for answers first.
 
@@ -54,21 +54,6 @@ If you then still feel the need to ask a question and need clarification, we rec
 - Provide project and platform versions (nodejs, npm, etc), depending on what seems relevant.
 
 We will then take care of the issue as soon as possible.
-
-<!--
-You might want to create a separate issue tag for questions and include it in this description. People should then tag their issues accordingly.
-
-Depending on how large the project is, you may want to outsource the questioning, e.g. to Stack Overflow or Gitter. You may add additional contact and information possibilities:
-- IRC
-- Slack
-- Gitter
-- Stack Overflow tag
-- Blog
-- FAQ
-- Roadmap
-- E-Mail List
-- Forum
--->
 
 ## I Want To Contribute
 
@@ -85,7 +70,7 @@ Depending on how large the project is, you may want to outsource the questioning
 A good bug report shouldn't leave others needing to chase you up for more information. Therefore, we ask you to investigate carefully, collect information and describe the issue in detail in your report. Please complete the following steps in advance to help us fix any potential bug as fast as possible.
 
 - Make sure that you are using the latest version.
-- Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions (Make sure that you have read the [documentation](https://genomicdatainfrastructure.github.io/gdi-userportal-docs/). If you are looking for support, you might want to check [this section](#i-have-a-question)).
+- Determine if your bug is really a bug and not an error on your side e.g. using incompatible environment components/versions.
 - To see if other users have experienced (and potentially already solved) the same issue you are having, check if there is not already a bug report existing for your bug or error in the [bug tracker](https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture/labels/bug)
 - Also make sure to search the internet (including Stack Overflow) to see if users outside of the GitHub community have discussed the issue.
 - Collect information about the bug:
@@ -101,13 +86,11 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 
 > You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead sensitive bugs must be sent by email to <>.
 
-<!-- You may add a PGP key to allow the messages to be sent encrypted as well. -->
-
 We use GitHub issues to track bugs and errors. If you run into an issue with the project:
 
-- Open an [Issue](https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture/issues/new). (Since we can't be sure at this point whether it is a bug or not, we ask you not to talk about a bug yet and not to label the issue.)
+- Open an [Issue](https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture/issues/new).
 - Explain the behavior you would expect and the actual behavior.
-- Please provide as much context as possible and describe the _reproduction steps_ that someone else can follow to recreate the issue on their own. This usually includes your code. For good bug reports you should isolate the problem and create a reduced test case.
+- Please provide as much context as possible and describe the _reproduction steps_ that someone else can follow to recreate the issue on their own.
 - Provide the information you collected in the previous section.
 
 Once it's filed:
@@ -116,20 +99,18 @@ Once it's filed:
 - A team member will try to reproduce the issue with your provided steps. If there are no reproduction steps or no obvious way to reproduce the issue, the team will ask you for those steps and mark the issue as `needs-repro`. Bugs with the `needs-repro` tag will not be addressed until they are reproduced.
 - If the team is able to reproduce the issue, it will be marked `needs-fix`, as well as possibly other tags (such as `critical`), and the issue will be left to be [implemented by someone](#your-first-code-contribution).
 
-<!-- You might want to create an issue template for bugs and errors that can be used as a guide and that defines the structure of the information to be included. If you do so, reference it here in the description. -->
-
 ### Suggesting Enhancements
 
-This section guides you through submitting an enhancement suggestion for GDI User Portal Front-end, **including completely new features and minor improvements to existing functionality**. Following these guidelines will help maintainers and the community to understand your suggestion and find related suggestions.
+This section guides you through submitting an enhancement suggestion for 1+MG Reference Architecture, **including completely new features and minor improvements to existing functionality**. Following these guidelines will help maintainers and the community to understand your suggestion and find related suggestions.
 
 <!-- omit in toc -->
 
 #### Before Submitting an Enhancement
 
 - Make sure that you are using the latest version.
-- Read the [documentation](https://TODO/) carefully and find out if the functionality is already covered, maybe by an individual configuration.
+- Read the [documentation](https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture/tree/main/docs) carefully and find out if the functionality is already covered.
 - Perform a [search](https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture/issues) to see if the enhancement has already been suggested. If it has, add a comment to the existing issue instead of opening a new one.
-- Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset. If you're just targeting a minority of users, consider writing an add-on/plugin library.
+- Find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Keep in mind that we want features that will be useful to the majority of our users and not just a small subset.
 
 <!-- omit in toc -->
 
@@ -139,37 +120,53 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/Genomi
 
 - Use a **clear and descriptive title** for the issue to identify the suggestion.
 - Provide a **step-by-step description of the suggested enhancement** in as many details as possible.
-- **Describe the current behavior** and **explain which behavior you expected to see instead** and why. At this point you can also tell which alternatives do not work for you.
-- You may want to **include screenshots and animated GIFs** which help you demonstrate the steps or point out the part which the suggestion is related to. You can use [this tool](https://www.cockos.com/licecap/) to record GIFs on macOS and Windows, and [this tool](https://github.com/colinkeenan/silentcast) or [this tool](https://github.com/GNOME/byzanz) on Linux. <!-- this should only be included if the project has a GUI -->
-- **Explain why this enhancement would be useful** to most GDI User Portal Front-end users. You may also want to point out the other projects that solved it better and which could serve as inspiration.
-
-<!-- You might want to create an issue template for enhancement suggestions that can be used as a guide and that defines the structure of the information to be included. If you do so, reference it here in the description. -->
+- **Describe the current behavior** and **explain which behavior you expected to see instead** and why.At this point you can also tell which alternatives do not work for you.
+- **Explain why this enhancement would be useful** to most users. You may also want to point out the other projects that solved it better and which could serve as inspiration.
 
 ### Your First Code Contribution
 
-<!-- TODO
-include Setup of env, IDE and typical getting started instructions?
+This project is a **Docusaurus** website. To get started:
 
--->
+1.  **Fork** the repository.
+2.  **Clone** your fork.
+3.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+4.  **Start the local development server**:
+    ```bash
+    npm start
+    ```
+    This will open the site at `http://localhost:3000`. Changes to `docs/` or `src/` will hot-reload.
+5.  **Create a branch** for your feature (`git checkout -b feature/amazing-feature`).
+6.  **Commit** your changes.
+7.  **Push** and open a Pull Request.
 
 ### Improving The Documentation
 
-<!-- TODO
-Updating, improving and correcting the documentation
+Documentation is the core of this project. It is located in the `docs/` directory and written in **Markdown**.
 
--->
+- **ARC42 Structure:** The docs follow the ARC42 template (Sections 1-12). Please respect this structure.
+- **Images:** Place diagrams in `docs/assets/`.
+- **Formatting:** We use Prettier. Please run `npx prettier . --write` before committing to ensure your changes comply with the style guide.
+- **Style:** Stick to US English and technical, concise language.
 
 ## Styleguides
 
 ### Commit Messages
 
-<!-- TODO
+We encourage the use of [Conventional Commits](https://www.conventionalcommits.org/):
 
--->
+- `feat:` New feature or content
+- `fix:` Bug fix or error correction
+- `docs:` Documentation only changes
+- `chore:` Maintenance tasks (dependencies, build)
+
+Example: `feat: add constraints for EU AI Act`
 
 ## Join The Project Team
 
-<!-- TODO -->
+If you are a frequent contributor and want to get involved in steering the architecture, please contact the maintainers via the [Issue Tracker](https://github.com/GenomicDataInfrastructure/oneplusmg-reference-architecture/issues).
 
 <!-- omit in toc -->
 

@@ -25,3 +25,4 @@ yarn-error.log*
 .clj-kondo/
 .lsp/
 .vscode/
+.antigravity/
