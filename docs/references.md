@@ -31,3 +31,5 @@ sidebar_position: 13
 1. Bridging the European Data Sharing Divide in Genomic Science.
    (https://doi.org/10.2196/37236)
 1. GA4GH.(https://www.ga4gh.org/our-products/)
+1. European AI Act. (https://artificialintelligenceact.eu/)
+1. Cloud computing in population-scale genomics: Strategies, challenges, and future directions. (https://doi.org/10.5734/JGM.2025.22.2.37)

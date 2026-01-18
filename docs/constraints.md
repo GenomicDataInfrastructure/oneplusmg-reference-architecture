@@ -6,46 +6,54 @@
 sidebar_position: 2
 ---
 
-# Constraints
+# Architecture Constraints
 
-The architectural constraints outlined in this section shape the design decisions for the 1+MG Network architecture, including:
+The architectural constraints outlined in this section shape the design decisions for the 1+MG Network. They are non-negotiable limitations imposed by regulation, politics, or organization.
 
-## Legal Constraints
+## 1. Regulatory & Legal Constraints (Must Have)
 
-| No. | Constraint                      | Description                                                                                                                                                                                                                                                   |
-| --- | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Territoriality (Data Residency) | Under DEP/Genome of Europe rules, sensitive genomic data storage and WGS activities must strictly take place within the territory of eligible countries (EU Member States and associated countries). Data cannot be stored in non-eligible jurisdictions.[^4] |
-| 2   | GDPR & National Derogations     | The system must comply with GDPR but also accommodate 27+ distinct national interpretations regarding genetic data (e.g., differing definitions of pseudonymization/anonymization).                                                                           |
-| 3   | Sovereignty of Access           | The final decision to grant access rests inalienably with the Local Data Authorities (DACs). The central infrastructure cannot bypass local authorization workflows.                                                                                          |
+| ID      | Constraint                          | Description                                                                                                                                                                                                                                                               |
+| :------ | :---------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **L01** | **GDPR & National Derogations**     | The system must comply with GDPR Art. 9 (Special Categories of Data). Crucially, it must support **27+ distinct national implementations**, as Member States have derogations for genetic data processing. A "one-size-fits-all" consent model is legally impossible.[^4] |
+| **L02** | **Territoriality (Data Residency)** | Raw genomic data and associated cryptographic keys must **never** leave the jurisdiction of the participating Member State (EEA), unless an explicit Adequacy Decision exists. All storage and processing must occur on sovereign soil.[^4]                               |
+| **L03** | **EU AI Act Compliance**            | Any component providing clinical decision support (e.g., "Variant Interpretation") classifies as **High-Risk AI** (EU AI Act, Annex III). It requires strict Conformity Assessments, Human Oversight measures, and Data Governance logging.[^1]                           |
 
-## Organisational Constraints
+## 2. Political Constraints (The "Why")
 
-| No. | Constraint                     | Description                                                                                                                                                                                   |
-| --- | ------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Mandatory Data Stewardship     | All nodes are required to maintain a Data Management Plan (DMP) using the Data Stewardship Wizard (DSW) and the "GDI knowledge model" to ensure DMPs are machine-actionable and standardized. |
-| 2   | National Resource Commitment   | The architecture must be deployable and operable within the estimated national resource limit of 5-8 FTEs per node, ensuring feasibility for smaller Member States.                           |
-| 3   | Dependency on National Consent | The central hub cannot directly interface with patients for consent withdrawal; it depends entirely on national systems for the data subject interface.                                       |
-| 4   | Sustainability                 | The architecture must transition from a grant-funded model (GDI) to a sustainable operating model funded by Member State fees (EDIC), requiring cost-efficient long-term maintenance.         |
+| ID      | Constraint                             | Description                                                                                                                                                                                                        |
+| :------ | :------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **P01** | **Local Sovereignty (The "Red Line")** | The architecture must ensure that **Local Data Authorities (DACs)** retain absolute vetting power over every access request. No "Central Super-Admin" can exist who can view data without local approval.[^17]     |
+| **P02** | **Equity & Inclusivity**               | The system must support smaller Member States with limited infrastructure. It cannot mandate expensive hardware (e.g., proprietary HPC) that would exclude less-resourced nations (The "Widening" principle).[^15] |
 
-## Technical Constraints
+## 3. Organizational Constraints
 
-| No. | Constraint                   | Description                                                                                                                                                                                                                                                       |
-| --- | ---------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Mandatory Federated Design   | There is no central repository of raw genomic data (BAM/CRAM/VCF). Data must physically reside in the country of origin or a designated national cloud. Analysis follows the "bring compute to data" paradigm via Secure Processing Environments (SPEs).[^1] [^3] |
-| 2   | Open Standards Compliance    | All nodes must implement GA4GH standards (Beacon v2, Passports, WES/TES, Crypt4GH). The use of proprietary standards that lock in vendors is prohibited to ensure long-term interoperability.[^2] [^5]                                                            |
-| 3   | Alignment with EHDS          | The architecture must align technically with the European Health Data Space (EHDS) infrastructure (HealthData@EU), specifically regarding the use of DCAT-AP for metadata publication.                                                                            |
-| 4   | National Resource Commitment | The architecture must be deployable and operable within the estimated national resource limit of 5-8 FTEs per node, ensuring feasibility for smaller Member States.                                                                                               |
-| 5   | Scope Limitation (SMPC)      | The development and certification of Secure Multi-Party Computation (SMPC) protocols are currently out of scope for the initial GDI implementation phases; the architecture relies on SPEs for now.                                                               |
-| 6   | Infrastructure Heterogeneity | The architecture must function across diverse environments, including commercial clouds, private government clouds, and academic HPCs.                                                                                                                            |
+| ID      | Constraint                     | Description                                                                                                                                                                     |
+| :------ | :----------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **O01** | **Mandatory Data Stewardship** | Nodes must use the **Data Stewardship Wizard (DSW)** and the "GDI Knowledge Model" to standardise Data Management Plans (DMPs). Machine-actionability of DMPs is required.[^14] |
+| **O02** | **Sustainability Model**       | The architecture must transition from project funding (GDI) to Member State fees (Genome EDIC). Operational costs must be minimized to ensure long-term viability.[^5]          |
 
-[^1]: GDI Deliverable D6.3 - Report on requirements for data quality and distributed analysis, as well as external resource interoperability. (https://zenodo.org/records/13920170)
+## 4. Technical Constraints
 
-[^2]: B1MG Deliverable D3.8 - Documented best practices in sharing and linking phenotypic and genetic data —2v0. (https://zenodo.org/records/7342855)
+| ID      | Constraint              | Description                                                                                                                                               |
+| :------ | :---------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **T01** | **Federated Design**    | **No Central Lake.** Data stays local; Compute moves to data (GA4GH WES). This is a hard architectural constraint derived from L02 and P01.[^3]           |
+| **T02** | **Open Standards Only** | All interfaces must use open standards (GA4GH Beacon, WES, DRS). Vendor-locked protocols are prohibited to ensure interoperability across 27 nations.[^8] |
+| **T03** | **EHDS Alignment**      | Metadata publication must align with the **DCAT-AP** standard to facilitate future integration with the European Health Data Space (HealthData@EU).[^19]  |
 
-[^3]: Cloud computing in population-scale genomics: Strategies, challenges, and future directions. (https://doi.org/10.5734/JGM.2025.22.2.37)
+[^1]: European AI Act. (https://artificialintelligenceact.eu/)
 
-[^4]:
-    Bridging the European Data Sharing Divide in Genomic Science.
-    (https://doi.org/10.2196/37236)
+[^3]: GDI Deliverable D6.3 - Data Quality & Analysis Requirements. (https://zenodo.org/records/13920170)
 
-[^5]: GA4GH.(https://www.ga4gh.org/our-products/)
+[^4]: Bridging the European Data Sharing Divide. (https://doi.org/10.2196/37236)
+
+[^5]: GDI Infrastructure Cost Report (D2.2). (https://zenodo.org/records/11635233)
+
+[^8]: GDI D8.7 Semantic Interoperability. (https://zenodo.org/records/11550316)
+
+[^14]: GDI D6.1 Data Management Policy. (https://zenodo.org/records/7956612)
+
+[^15]: GDI D2.1 Cost Analysis. (https://zenodo.org/records/10728049)
+
+[^17]: GDI D2.9 Data Governance Experiences. (https://zenodo.org/records/10069814)
+
+[^19]: 1+MG and EHDS Alignment. (https://framework.onemilliongenomes.eu/ehds-data-lifecycle)
