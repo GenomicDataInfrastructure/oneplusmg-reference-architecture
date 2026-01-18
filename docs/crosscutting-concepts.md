@@ -12,7 +12,7 @@ sidebar_position: 8
 
 ### 1.1. Metadata Model (HealthDCAT-AP)
 
-To ensure semantic interoperability and alignment with the **European Health Data Space (EHDS)**, 1+MG adopts the **HealthDCAT-AP 5.0** standard (a health-specific profile of DCAT-AP)[^1] [^2].
+To ensure semantic interoperability and alignment with the **European Health Data Space (EHDS)**, 1+MG adopts the **HealthDCAT-AP 5.0** standard (a health-specific profile of DCAT-AP)[^1] [^2] [^3].
 
 **Core Entities:**
 
@@ -25,7 +25,7 @@ To ensure semantic interoperability and alignment with the **European Health Dat
 
 ### 1.2. Identifier Schema
 
-All resources within the 1+MG network MUST adhere to the following **Persistent Identifier (PID)** pattern to guarantee global uniqueness across the federation:
+All resources within the 1+MG network MUST adhere to the following **Persistent Identifier (PID)** pattern to guarantee global uniqueness across the federation[^4]:
 
 **Pattern:** `^(GOE|GDI)-[A-Z]{2}-[A-Z]+-[0-9]+$`
 
@@ -45,16 +45,24 @@ All resources within the 1+MG network MUST adhere to the following **Persistent 
 
 ### 2.1. Controlled Vocabularies
 
-We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and consent status in a machine-readable way.
+We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and consent status in a machine-readable way[^5].
 
 - `dpv:Consent`: Processing based on explicit data subject consent.
 - `dpv:LegitimateInterest`: Processing based on legitimate interest (secondary use).
 
 ### 2.2. Encryption
 
-- **Data at Rest:** All genomic files (VCF/BAM) are encrypted using **Crypt4GH** (standard container format for encrypted genomic data).
+- **Data at Rest:** All genomic files (VCF/BAM) are encrypted using **Crypt4GH** (standard container format for encrypted genomic data)[^6].
 - **Data in Transit:** TLS 1.3 is mandatory for all APIs.
 
 [^1]: GDI Metadata Model Repository. (https://github.com/GenomicDataInfrastructure/gdi-metadata)
 
 [^2]: HealthDCAT-AP Specification. (https://semiceu.github.io/HealthDCAT-AP/releases/5.0.0/)
+
+[^3]: 1+MG and EHDS Alignment. (https://framework.onemilliongenomes.eu/ehds-data-lifecycle)
+
+[^4]: GDI Deliverable D8.7 - Report on semantic interoperability scenarios. (https://zenodo.org/records/11550316)
+
+[^5]: GDI Deliverable D6.6 - Report outlining the recommendations on data curation and ELSI compliance. (https://zenodo.org/records/10723494)
+
+[^6]: GA4GH Products. (https://www.ga4gh.org/our-products/)
