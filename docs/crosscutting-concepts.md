@@ -55,6 +55,25 @@ We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and cons
 - **Data at Rest:** All genomic files (VCF/BAM) are encrypted using **Crypt4GH** (standard container format for encrypted genomic data)[^6].
 - **Data in Transit:** TLS 1.3 is mandatory for all APIs.
 
+### 2.3. Authentication & Authorization
+
+- **Authentication:** Federated via **LS AAI**. Users authenticate at their Home Organisation (IdP).
+- **Authorization:** Claims are transported via **GA4GH Passports**[^7].
+  - **Visas:** Signed JWTs asserting permissions (e.g., `ControlledAccessGrants`).
+  - **Verification:** The National Node PEP MUST cryptographically verify the Visa signature against the DAC's public key[^8].
+
+## 3. Observability & Reliability
+
+### 3.1. Logging & Auditing
+
+- **Audit Trails:** Every access to genomic data (successful or denied) MUST be logged.
+- **Privacy:** Logs must NOT contain PII (e.g., query parameters with variant details) but MUST record User ID, Resource ID, Timestamp, and Decision[^9].
+
+### 3.2. Error Handling
+
+- **Standard:** APIs must return standard HTTP status codes (401 vs 403 distinction is critical).
+- **Format:** Error bodies MUST follow **RFC 7807** (Problem Details for HTTP APIs)[^10].
+
 [^1]: GDI Metadata Model Repository. (https://github.com/GenomicDataInfrastructure/gdi-metadata)
 
 [^2]: HealthDCAT-AP Specification. (https://semiceu.github.io/HealthDCAT-AP/releases/5.0.0/)
@@ -66,3 +85,11 @@ We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and cons
 [^5]: GDI Deliverable D6.6 - Report outlining the recommendations on data curation and ELSI compliance. (https://zenodo.org/records/10723494)
 
 [^6]: GA4GH Products. (https://www.ga4gh.org/our-products/)
+
+[^7]: GA4GH Passports Specification. (https://www.ga4gh.org/product/passports/)
+
+[^8]: B1MG Deliverable D2.4 - Report on data access and governance framework. (https://zenodo.org/records/8411102)
+
+[^9]: GDI Deliverable D6.6 - Report outlining the recommendations on data curation and ELSI compliance. (https://zenodo.org/records/10723494)
+
+[^10]: IETF RFC 7807 - Problem Details for HTTP APIs. (https://datatracker.ietf.org/doc/html/rfc7807)
