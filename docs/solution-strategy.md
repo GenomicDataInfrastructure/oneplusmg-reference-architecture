@@ -27,18 +27,18 @@ We employ a **Zero Trust** approach where identity and authorization are decoupl
 
 To ensure interoperability across 27+ countries, we rely strictly on open standards[^3].
 
-| Area                 | Standard / Technology        | Motivation                                                         |
-| :------------------- | :--------------------------- | :----------------------------------------------------------------- |
-| **Discovery**        | **GA4GH Beacon v2**          | enabling feasibility queries without exposing raw data.            |
-| **Data Access**      | **GA4GH DRS** / **htsget**   | Standardized streaming of large genomic files (VCF/CRAM).          |
-| **Compute**          | **GA4GH WES** / **TES**      | Abstracting the execution environment to allow portable workflows. |
-| **Metadata**         | **HealthDCAT-AP**            | Alignment with EU Health Data Space (EHDS).                        |
-| **Containerization** | **Docker** / **Singularity** | Ensuring reproducible analysis environments.                       |
-| **Orchestration**    | **Kubernetes**               | Managing the lifecycle of microservices and compute jobs.          |
+| Area                 | Standard / Technology        | Motivation                                                                    |
+| :------------------- | :--------------------------- | :---------------------------------------------------------------------------- |
+| **Discovery**        | **GA4GH Beacon v2**          | enabling feasibility queries without exposing raw data.                       |
+| **Data Access**      | **GA4GH DRS** / **htsget**   | Standardized streaming of large genomic files (VCF/CRAM).                     |
+| **Compute**          | **GA4GH WES** / **WfExS**    | Abstracting the execution environment. Mandating **RO-Crates** for packaging. |
+| **Metadata**         | **HealthDCAT-AP 5.0**        | Alignment with EU Health Data Space (EHDS).                                   |
+| **Containerization** | **Docker** / **Singularity** | Ensuring reproducible analysis environments.                                  |
+| **Orchestration**    | **Kubernetes**               | Managing the lifecycle of microservices and compute jobs.                     |
 
 ## 4. Organizational Strategy
 
-- **GDI Starter Kit:** To support smaller Member States, we provide a "Reference Implementation" (Starter Kit) that can be deployed out-of-the-box to spin up a compliant National Node[^4].
+- **GDI Starter Kit:** To support smaller Member States, we provide a "Reference Implementation" (Starter Kit) that can be deployed out-of-the-box to spin up a compliant National Node[^4]. It includes **Galaxy Europe** integration, **Beacon v2**, and **WfExS**.
 - **Separation of Concerns:** The **Genome EDIC** handles the catalog and governance logic, while **Member States** handle the storage and compute infrastructure.
 
 [^1]: Bridging the European Data Sharing Divide in Genomic Science. (https://doi.org/10.2196/37236)

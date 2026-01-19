@@ -20,52 +20,60 @@ The 1+MG Infrastructure is decomposed into three primary logical zones:
 | **Trust & Identity Broker (Central)** | **Functional Description:** Aggregates Claims from DACs and identities from LS AAI into GA4GH Passports.<br/>**Interfaces:** OIDC, GA4GH Passport API.<br/>**Quality:** High Availability, High Security (Signatures).<br/>**Location:** `src/broker`.                                     |
 | **National Node (Federated)**         | **Functional Description:** Stores encrypted genomic data and executes local compute workflows.<br/>**Interfaces:** WES (Compute), DRS (Data), Beacon (Discovery).<br/>**Quality:** High Security (Encryption), Data Sovereignty.<br/>**Location:** `src/node`, Hosted by Member State.    |
 
-
 ## 2. Level 2: 1+MG User Portal
 
 The User Portal is the central entry point for researchers, integrating several distinct services[^4].
 
-| Component               | Responsibility                                                                                                                                              |
-| :---------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Portal UI**           | **Functional Description:** Main web interface for unified user experience.<br/>**Interfaces:** HTTPS, OIDC.<br/>**Location:** `https://portal.gdi.lu`      |
-| **Dataset Catalogue**   | **Functional Description:** Searchable registry of available datasets (CKAN/FAIR).<br/>**Interfaces:** HTTPS.<br/>**Location:** `https://catalogue.portal.gdi.lu` |
-| **DAAMS**        | **Functional Description:** Manages access requests and DAC workflows (Data Access Application Management System).<br/>**Interfaces:** HTTPS.<br/>**Location:** `https://daam.portal.gdi.lu` |
+| Component             | Responsibility                                                                                                                                                                                                                                    |
+| :-------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Portal UI**         | **Functional Description:** Main web interface for unified user experience.<br/>**Interfaces:** HTTPS, OIDC.<br/>**Location:** `https://portal.gdi.lu`                                                                                            |
+| **Dataset Catalogue** | **Functional Description:** Searchable registry of available datasets (CKAN/FAIR).<br/>**Interfaces:** HTTPS.<br/>**Location:** `https://catalogue.portal.gdi.lu`                                                                                 |
+| **DAAMS**             | **Functional Description:** Manages the **Single Access Principle** workflow. Routes requests to Central DAC for review and then to National Nodes for Veto/Validation.<br/>**Interfaces:** HTTPS.<br/>**Location:** `https://daam.portal.gdi.lu` |
 
 ## 3. Level 2: National Node (GDI Node)
 
-
 The National Node is the most complex component. It must be deployed by each Member State.
 
-### 2.1. Discovery Layer (Beacon)
+### 3.1. Discovery Layer (Beacon)
 
 - **Beacon v2 API:** Receives queries (e.g., "Do you have variant X?").
 - **Metadata DB:** Stores the HealthDCAT-AP catalogue (Cohorts, Datasets).
-- **Response Strategy:** Checks local policies before returning `TRUE`/`FALSE` or counts[^1].
+- **Response Strategy:** Checks local policies before returning `TRUE`/`FALSE` or counts[^2].
 
-### 2.2. Secure Processing Environment (SPE)
+### 3.2. Secure Processing Environment (SPE) / TRE
 
-- **Workflow Execution Service (WES):** The API entry point for compute.
-- **Task Execution Service (TES):** Dispatches individual steps (containers) to the backend batch system (e.g., Slurm, HTCondor, or Kubernetes Jobs).
-- **Data Staging:** Pulls encrypted data from the Archive for the duration of the job[^2].
-- **Audit Service:** Logs all access attempts and processing steps for compliance (Five Safes)[^5].
+This component follows the **TRE-FX** reference architecture for secure computation[^3].
 
-### 2.3. Data Archive
+- **Submission Layer (Airlock):** The single monitored entry point. It receives encrypted RO-Crates and validates the user's Passport. It acts as a proxy, severing direct connection between the user and the execution backend.
+- **TRE Controller:** An intelligent agent that evaluates the incoming query/workflow against local policy. It decides if the job is "Safe to Run" (e.g., checking allowed docker images).
+- **Workflow Execution Service (WfExS) / Galaxy:** The core engine that orchestrates the analysis. It pulls data from the archive and executes containers (Docker/Singularity) in isolation.
+- **Task Execution Service (TES):** Dispatches individual steps to the backend batch system (e.g., Slurm, HTCondor, or Kubernetes Jobs).
+- **Isolation:** The Compute Nodes have **NO direct internet access**. All dependencies (containers, reference genomes) must be available locally or proxied via the Airlock[^4].
+- **Data Staging:** Pulls encrypted data from the Archive for the duration of the job.
 
-- **Encryption Layer:** Manages keys for data-at-rest encryption (Crypt4GH)[^3].
-- **Data Integrity Service:** Ensures file validity using checksums and periodic scrubbing[^5].
+### 3.3. Data Archive
+
+- **Encryption Layer:** Manages keys for data-at-rest encryption (Crypt4GH)[^5].
+- **Data Integrity Service:** Ensures file validity using checksums and periodic scrubbing[^4].
 - **Object Storage:** S3-compatible storage for VCF, BAM, and CRAM files.
 - **Data Repository Service (DRS):** Resolves logical IDs (`drs://gdi...`) to physical signed URLs for internal compute use.
 
-[^1]: GA4GH Beacon v2 Specification. (https://www.ga4gh.org/product/beacon-v2/)
+### 3.4. Data Onboarding & Curation
 
-[^2]: GDI Deliverable D8.8 - Evaluation of distributed analysis and federated learning infrastructure solutions. (https://zenodo.org/records/10887366)
+- **Ingest Pipeline:** Validates quality of incoming data from Data Providers (integrity, format).
+- **Pseudonymisation Service:** Replaces direct identifiers with 1+MG specific pseudonyms before long-term storage (Separation of Concerns).
+- **Metadata Mapper:** Transforms local metadata into the common GDI model (HealthDCAT-AP).
 
-[^3]: GA4GH Crypt4GH Standard. (https://www.ga4gh.org/product/crypt4gh/)
-
-### 2.4. Local Access Control
+### 3.5. Local Access Control
 
 - **Policy Enforcement Point (PEP):** Intercepts every API call. Validates the User's GA4GH Passport and the specific Visas against the dataset's Access Control List (ACL).
 
-[^4]: GDI Milestone MS12 - Production user portal deployed. (https://portal.gdi.lu/)
+[^1]: GDI Milestone MS12 - Production user portal deployed. (https://portal.gdi.lu/)
 
-[^5]: IT infrastructure requirements based on a data protection by design and default approach.
+[^2]: GA4GH Beacon v2 Specification. (https://www.ga4gh.org/product/beacon-v2/)
+
+[^3]: GDI Deliverable D8.8 - Evaluation of distributed analysis and federated learning infrastructure solutions. (https://zenodo.org/records/10887366)
+
+[^4]: IT infrastructure requirements based on a data protection by design and default approach.
+
+[^5]: GA4GH Crypt4GH Standard. (https://www.ga4gh.org/product/crypt4gh/)
