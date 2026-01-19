@@ -21,18 +21,13 @@ The architecture is driven by the following high-level business goals:
 
 - **Enable Personalized Medicine & Research:** The primary goal is to make at least one million sequenced genomes accessible for secondary use. A key milestone is the **Genome of Europe** initiative, creating a reference database of **>500,000 Whole Genome Sequences (WGS)** representing **40+ distinct ancestry subgroups** to capture European diversity.[^1] [^24]
 - **Ensure Data Sovereignty:** The system must adhere to a federated model where data remains within the jurisdiction of the Member State (National Nodes), respecting local ethical and legal frameworks while enabling cross-border analysis.[^4]
-- **Sustainable Operation:** The transition from project-based funding (GDI) to the Genome European Digital Infrastructure Consortium (Genome EDIC) requires a cost-effective, sustainable infrastructure model funded by Member States.[^5] [^6] [^7]
+- **Sustainable Operation:** The transition from project-based funding (GDI) to the Genome European Digital Infrastructure Consortium (Genome EDIC) requires a cost-effective, sustainable infrastructure model funded by Member States and supported by proven business models.[^5] [^6] [^7]
 - **Trust and Social Acceptance:** The architecture must enforce a robust Trust Framework to maintain public trust. This includes **Participatory Governance**, ensuring that citizens and patients are not just passive subjects but contributing voices in the governance structure (e.g., via Participant Panels), and implementing **Data Protection by Design and Default (DPbDD)** principles.[^8] [^25] [^30]
-- **Support Advanced Use Cases:** The infrastructure must support complex domain-specific needs, including:
-  - **Policy Development**: Using the infrastructure for evidence-based policy making in healthcare and public health [^30].
-  - **Infectious Diseases**: Pathogen genomic surveillance and response [^27].
-  - **Infectious Disease Preparedness** (rapid synthetic data deployment) and **Cancer Precision Medicine** (longitudinal T0/T1/T3 queries across federated nodes).[^26]
-- **BG-06**: Enable advanced analytical use cases (e.g., Federated Learning) [^27].
-- **BG-10: Federated Processing (Move-Code-To-Data)**: The infrastructure must support the execution of standardized analysis workflows (packaged as RO-Crates) directly within the secure node environment (TRE/SPE) where the data resides [^14].
-- **BG-11: Semantic Harmonization**: To enable effective cross-border queries, all clinical and phenotypic data must be mapped to common data models (OMOP CDM, Phenopackets) following the **Sunflower Model** (Core + Rings + Petals) strategy and exposed via standardized metadata profiles (HealthDCAT-AP) [^12].
-- **BG-07**: Ensure long-term sustainability through proven business models [^27].
-- **BG-08**: Transition from a data repository to a **Knowledge Base**, where data is not just stored but curated, harmonized, and annotated to support advanced discovery and re-use [^9] [^4].
-- **BG-09: Virtualized Data Access**: Shift from a "download and analyze" model to a "virtualized access" model, where researchers analyze data within secure, monitored environments (Secure Processing Environments - SPEs) close to the data source [^31] [^30].
+- **Support Advanced Use Cases:** The infrastructure must support complex domain-specific needs, including evidence-based policy making, infectious disease surveillance, outbreak preparedness, and cancer precision medicine (longitudinal T0/T1/T3 queries).[^26] [^27] [^30]
+- **Enable Federated Processing:** The infrastructure must support the execution of standardized analysis workflows (packaged as RO-Crates) directly within the secure node environment (TRE/SPE) where the data resides (Move-Code-To-Data).[^14]
+- **Virtualize Data Access:** Shift from a "download and analyze" model to a "virtualized access" model, where researchers analyze data within secure, monitored environments (Secure Processing Environments - SPEs) close to the data source.[^30] [^31]
+- **Harmonize Semantics:** To enable effective cross-border queries, all clinical and phenotypic data must be mapped to common data models (OMOP CDM, Phenopackets) following the **Sunflower Model** (Core + Rings + Petals) strategy and exposed via standardized metadata profiles (HealthDCAT-AP).[^12]
+- **Evolve into a Knowledge Base:** Transition from a data repository to a **Knowledge Base**, where data is not just stored but curated, harmonized, and annotated to support advanced discovery and re-use.[^4] [^9]
 
 ## Requirements Overview
 
@@ -48,9 +43,6 @@ To achieve these business goals, the system must provide the following core func
 | FR06 | Alignment with EHDS and National eHealth | The system design should anticipate upcoming EHDS interoperability requirements for secondary use. For example, if the EHDS mandates certain APIs or data formats for health data access bodies, our implementation should be compatible. Additionally, while not the primary focus, the solution should be able to interface with national eHealth systems where necessary – for instance, verifying patient consents via national health registries or retrieving updated clinical data. Ensuring this alignment means the 1+MG infrastructure can become an integral part of the broader health data ecosystem and take advantage of future EU health data exchange mechanisms.[^12] [^13] [^18] [^30]                                |
 
 ## Quality Goals
-
-- **BG-09: Virtualized Data Access**
-  Shift from a "download and analyze" model to a "virtualized access" model, where researchers analyze data within secure, monitored environments (Secure Processing Environments - SPEs) close to the data source.
 
 The architecture is shaped by specific quality attributes that guide design decisions:
 

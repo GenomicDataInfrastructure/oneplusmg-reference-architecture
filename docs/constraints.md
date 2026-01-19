@@ -6,14 +6,9 @@
 sidebar_position: 2
 ---
 
-# Architecture Constraints
+# Constraints
 
 The architectural constraints outlined in this section shape the design decisions for the 1+MG Network. They are non-negotiable limitations imposed by regulation, politics, or organization.
-
-### Financial Constraints
-
-- **F01: Project Funding Cycles**: Sustainability must be planned beyond typical 3-5 year EU project funding cycles.
-- **F02: Reprocessing Cost Sensitivity**: The architecture must account for significant cost disparities in data reprocessing (e.g., ~€5 for short-read vs ~€530 for long-read per genome), necessitating careful decisions on when and where to standardize data [^10].
 
 ## 1. Regulatory & Legal Constraints
 
@@ -37,12 +32,12 @@ The architectural constraints outlined in this section shape the design decision
 ## 3. Organizational Constraints
 
 | ID      | Constraint                                   | Description                                                                                                                                                                                                                                                                              |
-| :------ | :------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| :------ | :------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **O01** | **Mandatory Data Stewardship**               | Nodes must use the **Data Stewardship Wizard (DSW)** and the "GDI Knowledge Model" to standardise Data Management Plans (DMPs). Machine-actionability of DMPs is required.[^8]                                                                                                           |
 | **O02** | **Sustainability Model**                     | The architecture must transition from project funding (GDI) to Member State fees (Genome EDIC). Operational costs must be minimized to ensure long-term viability.[^9]                                                                                                                   |
 | **O03** | **Security Certification**                   | Compliance with **ISO 27001** (Information Security) and **ISO 27701** (Privacy) is required. At a minimum, nodes must undergo external audits, with full certification being the ideal state for data pooling environments.[^15]                                                        |
 | **O04** | **Staff Secrecy/Training**                   | All staff with access to the infrastructure must legally sign secrecy clauses and undergo mandatory data protection training specific to their role.[^15]                                                                                                                                |
-| **O05** | **Data Protection Impact Assessment (DPIA)** | Every Node must complete a DPIA before joining the production network. This is a mandatory legal requirement under GDPR Art. 35.[^22] [^26]                                                                                                                                              | Note that DPIAs are local responsibilities but must follow the 1+MG template. |
+| **O05** | **Data Protection Impact Assessment (DPIA)** | Every Node must complete a DPIA before joining the production network. This is a mandatory legal requirement under GDPR Art. 35. Note that DPIAs are local responsibilities but must follow the 1+MG template.[^22] [^26]                                                                |
 | **O06** | **FitSM Service Management**                 | The GDI Helpdesk and support workflows must adhere to the FitSM standard for IT Service Management (ITSM), ensuring federated incident and problem management [^28].                                                                                                                     |
 | **O07** | **No International Record Linkage**          | Data linkage is strictly limited to within national nodes using national linking keys. Cross-border linking of individual records is explicitly out of scope due to legal complexity and risk of subject duplication [^10].                                                              |
 | **O08** | **Incidental Findings Path**                 | 1+MG Data Users must report valid, clinically actionable Incidental Findings (IFs) ONLY to the Data Holder (National Node). Direct contact between Data Users and Data Subjects is strictly prohibited to respect local constraints and consent [^25].                                   |
@@ -51,6 +46,8 @@ The architectural constraints outlined in this section shape the design decision
 | **O11** | **Decommissioning Process**                  | Nodes must implement a defined process for dataset decommissioning, allowing for the removal or archival of datasets that are no longer maintained or compliant [^34].                                                                                                                   |
 | **O12** | **Query Budgeting (Privacy)**                | The Discovery Portal must implement query budgeting and monitoring to prevent reconstruction attacks (e.g., repeating specific queries to identify individuals in a cohort) [^30].                                                                                                       |
 | **O13** | **Time-Limited Access**                      | Data access is strictly temporary. The system must automatically revoke access permissions upon the expiration of the Data Access Agreement (DAA) or project end date [^30].                                                                                                             |
+| **O14** | **Project Funding Cycles**                   | Sustainability must be planned beyond typical 3-5 year EU project funding cycles.                                                                                                                                                                                                        |
+| **O15** | **Reprocessing Cost Sensitivity**            | The architecture must account for significant cost disparities in data reprocessing (e.g., ~€5 for short-read vs ~€530 for long-read per genome), necessitating careful decisions on when and where to standardize data [^10].                                                           |
 
 ## 4. Technical Constraints
 
