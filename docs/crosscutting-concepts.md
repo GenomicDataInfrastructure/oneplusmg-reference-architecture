@@ -25,7 +25,9 @@ To ensure semantic interoperability and alignment with the **European Health Dat
 
 ### 1.2. Identifier Schema
 
-All resources within the 1+MG network MUST adhere to the following **Persistent Identifier (PID)** pattern to guarantee global uniqueness across the federation[^4]:
+### 1.2. Identifier Schema
+
+All resources within the 1+MG network MUST adhere to the following **Persistent Identifier (PID)** pattern to guarantee global uniqueness across the federation[^1]:
 
 **Pattern:** `^(GOE|GDI)-[A-Z]{2}-[A-Z]+-[0-9]+$`
 
