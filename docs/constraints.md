@@ -20,6 +20,7 @@ The architectural constraints outlined in this section shape the design decision
 | **L04** | **EHDS Integration**                | The system must act as a **Health Data Access Body (HDAB)** node under the European Health Data Space (EHDS). It must implement the secure processing environments and metadata cataloging standards mandated by HealthData@EU to enable secondary use.[^3]               |
 | **L05** | **Data Governance Act (DGA)**       | The framework must support **Data Altruism** mechanisms, allowing citizens to voluntarily donate data for science. Technical workflows must manage specific altruism consent forms and recognized data altruism organizations.[^4]                                        |
 | **L06** | **NIS2 Directive (Cybersecurity)**  | As a "Critical Entity" (Health Sector), the infrastructure must implement state-of-the-art cyber hygiene, mandatory incident reporting (24h warning/72h full report), and supply chain security auditing.[^5]                                                             |
+| **L07** | **International Transfers (GDPR Ch. V)** | Connections to **Global Resources** (e.g., All of Us, H3Africa) situated in non-EEA countries without an adequacy decision must rely on **Standard Contractual Clauses (SCCs)** or specific derogations (Art. 49).[^27]                                  |
 
 ## 2. Political Constraints
 
@@ -45,7 +46,11 @@ The architectural constraints outlined in this section shape the design decision
 | **T02** | **Open Standards Only** | All interfaces must use open standards (GA4GH Beacon, WES, DRS). Vendor-locked protocols are prohibited to ensure interoperability across 27 nations.[^11] [^14]                                                       |
 | **T03** | **EHDS Alignment**      | Metadata publication must align with the **DCAT-AP** standard to facilitate future integration with the European Health Data Space (HealthData@EU).[^12]                                                               |
 | **T04** | **Cyber Resilience**    | In line with the Cyber Resilience Act, all software components must be "secure by default" (no default pwds), support automatic updates, and have a disclosed vulnerability handling process (SBOM requirements).[^13] |
+| **T05** | **Synthetic Data First** | For high-risk use cases (e.g., Infectious Disease) where real data is scarce or highly sensitive, the architecture must support the ingestion and processing of **Synthetic Data** cohorts for initial pipeline validation.[^26]                  |
 
+[^24]: Genome of Europe plan (extracted from 20230608_GDI_D1.4 Genome of Europe plan.txt)
+
+[^25]: B1MG D1.6 Citizen engagement and public trust (extracted from B1MG D1.6 Citizen engagement and public trust in genomic data sharing.txt)
 [^1]: Bridging the European Data Sharing Divide in Genomic Science. (https://doi.org/10.2196/37236)
 
 [^2]: European AI Act. (https://artificialintelligenceact.eu/)
@@ -73,5 +78,9 @@ The architectural constraints outlined in this section shape the design decision
 [^13]: Cyber Resilience Act. (https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act)
 
 [^14]: GA4GH. (https://www.ga4gh.org/our-products/)
+
+[^26]: GDI MS26 Initial set of questions by the use cases. (extracted from GDI MS26 Initial set of questions by the use cases .txt)
+
+[^27]: GDI D6.4 Report on global resources suitable for inclusion into the GDI. (extracted from 202510 - GDI_D6.4 Report on global resources suitable for inclusion into the GDI.txt)
 
 [^15]: IT infrastructure requirements based on a data protection by design and default approach. (extracted from IT_infrastructure_requirements_based_on_a_data_protection_by_design_and_default_approach_September-2023.txt)

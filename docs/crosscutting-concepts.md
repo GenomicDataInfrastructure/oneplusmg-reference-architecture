@@ -45,19 +45,31 @@ All resources within the 1+MG network MUST adhere to the following **Persistent 
 
 ## 2. Security & Compliance
 
-### 2.1. Controlled Vocabularies
+## 2. Security & Compliance
+
+### 2.1. Data Protection by Design (Five Safes)
+
+We adhere to the **Five Safes** framework to demonstrate compliance with GDPR Data Protection by Design and Default (DPbDD)[^11]:
+
+1.  **Safe Projects:** Is this use of the data appropriate, lawful, ethical? (Handled by DAAMS/DAC).
+2.  **Safe People:** Can the users be trusted? (Handled by LS AAI & Passports).
+3.  **Safe Data:** Is the data itself safe? (Encryption, Pseudonymisation).
+4.  **Safe Settings:** Does the access facility limit unauthorized use? (Secure Processing Environment).
+5.  **Safe Outputs:** Is confidentiality maintained for outputs? (Airlock/Egress Control).
+
+### 2.2. Controlled Vocabularies
 
 We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and consent status in a machine-readable way[^5].
 
 - `dpv:Consent`: Processing based on explicit data subject consent.
 - `dpv:LegitimateInterest`: Processing based on legitimate interest (secondary use).
 
-### 2.2. Encryption
+### 2.3. Encryption
 
 - **Data at Rest:** All genomic files (VCF/BAM) are encrypted using **Crypt4GH** (standard container format for encrypted genomic data)[^6].
 - **Data in Transit:** TLS 1.3 is mandatory for all APIs.
 
-### 2.3. Authentication & Authorization
+### 2.4. Authentication & Authorization
 
 - **Authentication:** Federated via **LS AAI**. Users authenticate at their Home Organisation (IdP).
 - **Authorization:** Claims are transported via **GA4GH Passports**[^7].
@@ -95,3 +107,5 @@ We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and cons
 [^9]: GDI Deliverable D6.6 - Report outlining the recommendations on data curation and ELSI compliance. (https://zenodo.org/records/10723494)
 
 [^10]: IETF RFC 7807 - Problem Details for HTTP APIs. (https://datatracker.ietf.org/doc/html/rfc7807)
+
+[^11]: IT infrastructure requirements based on a data protection by design and default approach.
