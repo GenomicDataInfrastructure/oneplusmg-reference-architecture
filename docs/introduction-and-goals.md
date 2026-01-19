@@ -76,9 +76,7 @@ The stakeholders of the 1+MG Network include all roles and organizations that in
 
 [^1]: European 1+ Million Genomes. (https://digital-strategy.ec.europa.eu/en/policies/1-million-genomes)
 
-[^2]: GDI Project. (https://gdi.onemilliongenomes.eu/)
 
-[^3]: 1+MG Use cases. (https://framework.onemilliongenomes.eu/usecases)
 
 [^4]: GDI Deliverable D6.3 - Report on requirements for data quality and distributed analysis, as well as external resource interoperability. (https://zenodo.org/records/13920170)
 
@@ -114,24 +112,24 @@ The stakeholders of the 1+MG Network include all roles and organizations that in
 
 [^20]: GA4GH.(https://www.ga4gh.org/our-products/)
 
-[^21]: Cloud computing in population-scale genomics: Strategies, challenges, and future directions. (https://doi.org/10.5734/JGM.2025.22.2.37)
-
 [^22]: Masterdocument data governance. (extracted from Masterdocument_data-governance_recovered-formatting.docx)
 
-[^23]: IT infrastructure requirements based on a data protection by design and default approach. (extracted from IT_infrastructure_requirements_based_on_a_data_protection_by_design_and_default_approach_September-2023.txt)
+[^23]: B1MG / 1+MG - IT infrastructure requirements based on a data protection by design and default approach(https://zenodo.org/records/8399393)
 
-[^24]: Genome of Europe plan (extracted from 20230608_GDI_D1.4 Genome of Europe plan.txt)
+[^24]: GDI Deliverable D1.4 - Genome of Europe plan (https://zenodo.org/records/8017856)
 
-[^25]: B1MG D1.6 Citizen engagement and public trust (extracted from B1MG D1.6 Citizen engagement and public trust in genomic data sharing.txt)
+[^25]: B1MG Deliverable D1.6 - Citizen engagement and public trust (https://zenodo.org/records/7913029)
 
-[^26]: GDI MS26 Initial set of questions by the use cases. (extracted from GDI MS26 Initial set of questions by the use cases .txt)
+[^26]: GDI Milestone MS26 - Initial set of questions by the use cases. (https://zenodo.org/records/8289477)
 
-[^27]: GDI D6.4 Report on global resources suitable for inclusion into the GDI. (extracted from 202510 - GDI_D6.4 Report on global resources suitable for inclusion into the GDI.txt)
+[^27]: GDI Deliverable D6.4 - Report on global resources suitable for inclusion into the GDI. (https://zenodo.org/records/17580079)
 
-[^28]: GDI Deliverable D4.1 - Helpdesk roadmap. (extracted from 20230608_GDI_D4.1 Helpdesk roadmap.txt)
+[^28]: GDI Deliverable D4.1 - Helpdesk roadmap. (https://zenodo.org/records/8017873)
 
-[^29]: GDI Deliverable D5.5 - QoS metrics. (extracted from 202310 - GDI_D5.5 Report outlining QoS metrics, reporting processes, and node TRLs defined.txt)
+[^29]: GDI Deliverable D5.5 - Report outlining QoS metrics, reporting processes, and node TRLs defined. (https://zenodo.org/records/10256902)
 
-[^30]: B1MG D2.4 - Report on data access and governance framework.
+[^30]: B1MG Deliverable D2.4 - Report on data access and governance framework. (https://zenodo.org/records/8411102)
 
 [^31]: GDI Deliverable D8.4 - Report on the implementation of the secure processing environment standards.(https://zenodo.org/records/11550561)
+
+[^34]: B1MG / 1+MG - Incidental Findings Policy - Summary and Recommendations - version for 1+MG Framework. (https://zenodo.org/records/8279737)

@@ -68,12 +68,10 @@ This component follows the **TRE-FX** reference architecture for secure computat
 
 - **Policy Enforcement Point (PEP):** Intercepts every API call. Validates the User's GA4GH Passport and the specific Visas against the dataset's Access Control List (ACL).
 
-[^1]: GDI Milestone MS12 - Production user portal deployed. (https://portal.gdi.lu/)
-
 [^2]: GA4GH Beacon v2 Specification. (https://www.ga4gh.org/product/beacon-v2/)
 
 [^3]: GDI Deliverable D8.8 - Evaluation of distributed analysis and federated learning infrastructure solutions. (https://zenodo.org/records/10887366)
 
-[^4]: IT infrastructure requirements based on a data protection by design and default approach.
+[^4]: B1MG / 1+MG - IT infrastructure requirements based on a data protection by design and default approach. (https://zenodo.org/records/8399393)
 
 [^5]: GA4GH Crypt4GH Standard. (https://www.ga4gh.org/product/crypt4gh/)

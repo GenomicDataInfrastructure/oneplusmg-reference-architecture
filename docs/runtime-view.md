@@ -57,10 +57,6 @@ sequenceDiagram
 5.  **Provisioning:** If approved by all (or a subset of) nodes, the corresponding permissions are minted as **GA4GH Visas** by the **Trust Broker**.
 6.  **Secure Processing:** The researcher receives a **GA4GH Passport** containing these Visas. They submit a compute request (WES) to the National Node. The Node's **Policy Enforcement Point (PEP)** validates the Passport against the local access control list before executing the workflow in the isolated **SPE**.
 
-[^1]: B1MG Deliverable D2.4 - Report on data access and governance framework.
-
-[^2]: GDI Deliverable D8.4 - Report on the implementation of the secure processing environment standards.
-
 ## 2. Secure Processing Workflow (TRE-FX)
 
 This scenario details the execution phase (`ujGdi08`), focusing on how the **Secure Processing Environment (SPE)** ensures isolation while allowing external analysis[^2] [^3].
@@ -112,4 +108,8 @@ sequenceDiagram
 4.  **Execution (Isolation):** Individual tasks are sent to **TES**. The compute nodes have **no internet access** to prevent unauthorized data exfiltration.
 5.  **Egress:** Final results are sent back to the Airlock. An **Egress Check** (automated or manual) ensures no individual-level data is leaving the boundary.
 
-[^3]: GDI.PillarIII.UserJourneys.txt (ujGdi08)
+[^1]: B1MG Deliverable D2.4 - Report on data access and governance framework. (https://zenodo.org/records/8411102)
+
+[^2]: GDI Deliverable D8.4 - Report on the implementation of the secure processing environment standards.(https://zenodo.org/records/11550561)
+
+[^3]: GDI - Pillar III User Journeys. (https://zenodo.org/records/17661188)

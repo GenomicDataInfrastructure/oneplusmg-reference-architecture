@@ -77,6 +77,6 @@ The system relies on secure internet-based channels using standard genomic proto
 
 [^22]: Masterdocument data governance. (extracted from Masterdocument_data-governance_recovered-formatting.docx)
 
-[^28]: GDI Deliverable D4.1 - Helpdesk roadmap. (extracted from 20230608_GDI_D4.1 Helpdesk roadmap.txt)
+[^28]: GDI Deliverable D4.1 - Helpdesk roadmap. (https://zenodo.org/records/8017873)
 
-[^30]: B1MG D2.4 - Report on data access and governance framework.
+[^30]: B1MG Deliverable D2.4 - Report on data access and governance framework. (https://zenodo.org/records/8411102)

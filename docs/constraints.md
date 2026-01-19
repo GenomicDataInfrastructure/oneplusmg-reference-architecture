@@ -95,23 +95,21 @@ The architectural constraints outlined in this section shape the design decision
 
 [^14]: GA4GH. (https://www.ga4gh.org/our-products/)
 
-[^15]: IT infrastructure requirements based on a data protection by design and default approach. (extracted from IT_infrastructure_requirements_based_on_a_data_protection_by_design_and_default_approach_September-2023.txt)
+[^15]: B1MG / 1+MG - IT infrastructure requirements based on a data protection by design and default approach(https://zenodo.org/records/8399393)
 
 [^22]: Masterdocument data governance. (extracted from Masterdocument_data-governance_recovered-formatting.docx)
 
-[^24]: Genome of Europe plan (extracted from 20230608_GDI_D1.4 Genome of Europe plan.txt)
+[^25]: B1MG Deliverable D1.6 - Citizen engagement and public trust (https://zenodo.org/records/7913029)
 
-[^25]: B1MG D1.6 Citizen engagement and public trust (extracted from B1MG D1.6 Citizen engagement and public trust in genomic data sharing.txt)
+[^26]: B1MG Deliverable D2.3 - Report on legal set-up including DPIA (https://zenodo.org/records/8411067)
 
-[^26]: B1MG Deliverable D2.3 - Report on legal set-up including DPIA (extracted from 202305 B1MG D2.3 - Report on legal set-up including DPIA.txt)
+[^27]: GDI Deliverable D6.4 - Report on global resources suitable for inclusion into the GDI. (https://zenodo.org/records/17580079)
 
-[^27]: GDI D6.4 Report on global resources suitable for inclusion into the GDI. (extracted from 202510 - GDI_D6.4 Report on global resources suitable for inclusion into the GDI.txt)
+[^28]: GDI Deliverable D4.1 - Helpdesk roadmap. (https://zenodo.org/records/8017873)
 
-[^28]: GDI Deliverable D4.1 - Helpdesk roadmap. (extracted from 20230608_GDI_D4.1 Helpdesk roadmap.txt)
+[^29]: GDI Deliverable D5.5 - Report outlining QoS metrics, reporting processes, and node TRLs defined. (https://zenodo.org/records/10256902)
 
-[^29]: GDI Deliverable D5.5 - Report outlining QoS metrics, reporting processes, and node TRLs defined. (extracted from 202310 - GDI_D5.5 Report outlining QoS metrics, reporting processes, and node TRLs defined.txt)
-
-[^30]: B1MG D2.4 - Report on data access and governance framework.
+[^30]: B1MG Deliverable D2.4 - Report on data access and governance framework. (https://zenodo.org/records/8411102)
 
 [^31]: GDI Deliverable D8.4 - Report on the implementation of the secure processing environment standards.(https://zenodo.org/records/11550561)
 

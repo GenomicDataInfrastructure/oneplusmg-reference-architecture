@@ -58,4 +58,4 @@ sidebar_position: 9
 
 [^2]: GDI Deliverable D8.8 - Evaluation of distributed analysis and federated learning infrastructure solutions. (https://zenodo.org/records/10887366)
 
-[^3]: IT infrastructure requirements based on a data protection by design and default approach. (extracted from IT_infrastructure_requirements_based_on_a_data_protection_by_design_and_default_approach_September-2023.txt)
+[^3]: B1MG / 1+MG - IT infrastructure requirements based on a data protection by design and default approach. (https://zenodo.org/records/8399393)

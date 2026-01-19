@@ -92,8 +92,6 @@ We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and cons
 
 [^3]: 1+MG and EHDS Alignment. (https://framework.onemilliongenomes.eu/ehds-data-lifecycle)
 
-[^4]: GDI Deliverable D8.7 - Report on semantic interoperability scenarios. (https://zenodo.org/records/11550316)
-
 [^5]: GDI Deliverable D6.6 - Report outlining the recommendations on data curation and ELSI compliance. (https://zenodo.org/records/10723494)
 
 [^6]: GA4GH Products. (https://www.ga4gh.org/our-products/)
@@ -106,4 +104,4 @@ We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and cons
 
 [^10]: IETF RFC 7807 - Problem Details for HTTP APIs. (https://datatracker.ietf.org/doc/html/rfc7807)
 
-[^11]: IT infrastructure requirements based on a data protection by design and default approach.
+[^11]: B1MG / 1+MG - IT infrastructure requirements based on a data protection by design and default approach. (https://zenodo.org/records/8399393)
