@@ -76,8 +76,6 @@ The stakeholders of the 1+MG Network include all roles and organizations that in
 
 [^1]: European 1+ Million Genomes. (https://digital-strategy.ec.europa.eu/en/policies/1-million-genomes)
 
-
-
 [^4]: GDI Deliverable D6.3 - Report on requirements for data quality and distributed analysis, as well as external resource interoperability. (https://zenodo.org/records/13920170)
 
 [^5]: GDI Deliverable D2.2 - Infrastructure cost report. (https://zenodo.org/records/11635233)
