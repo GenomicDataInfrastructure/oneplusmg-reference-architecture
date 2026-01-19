@@ -31,3 +31,6 @@ sidebar_position: 13
 1.  Bridging the European Data Sharing Divide in Genomic Science. (https://doi.org/10.2196/37236)
 1.  GA4GH.(https://www.ga4gh.org/our-products/)
 1.  European AI Act. (https://artificialintelligenceact.eu/)
+1.  Masterdocument data governance. (extracted from Masterdocument_data-governance_recovered-formatting.docx)
+1.  IT infrastructure requirements based on a data protection by design and default approach. (extracted from IT_infrastructure_requirements_based_on_a_data_protection_by_design_and_default_approach_September-2023.txt)
+1.  B1MG D2.2 - Policy document for a genome data sharing initiative. (extracted from 202305 B1MG D2.2 - Policy document for a genome data sharing initiative.txt)

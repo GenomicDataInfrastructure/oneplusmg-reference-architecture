@@ -34,6 +34,8 @@ The architectural constraints outlined in this section shape the design decision
 | :------ | :----------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **O01** | **Mandatory Data Stewardship** | Nodes must use the **Data Stewardship Wizard (DSW)** and the "GDI Knowledge Model" to standardise Data Management Plans (DMPs). Machine-actionability of DMPs is required.[^8] |
 | **O02** | **Sustainability Model**       | The architecture must transition from project funding (GDI) to Member State fees (Genome EDIC). Operational costs must be minimized to ensure long-term viability.[^9]         |
+| **O03** | **Security Certification**     | Compliance with **ISO 27001** (Information Security) and **ISO 27701** (Privacy) is required. At a minimum, nodes must undergo external audits, with full certification being the ideal state for data pooling environments.[^15] |
+| **O04** | **Staff Secrecy/Training**     | All staff with access to the infrastructure must legally sign secrecy clauses and undergo mandatory data protection training specific to their role.[^15]                                                                               |
 
 ## 4. Technical Constraints
 
@@ -71,3 +73,5 @@ The architectural constraints outlined in this section shape the design decision
 [^13]: Cyber Resilience Act. (https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act)
 
 [^14]: GA4GH. (https://www.ga4gh.org/our-products/)
+
+[^15]: IT infrastructure requirements based on a data protection by design and default approach. (extracted from IT_infrastructure_requirements_based_on_a_data_protection_by_design_and_default_approach_September-2023.txt)

@@ -26,3 +26,10 @@ The following table explains the key terms and abbreviations used in this archit
 | **WES**                | **Workflow Execution Service**. A GA4GH standard for sending analysis workflows to where the data resides.                                                   |
 | **DRS**                | **Data Repository Service**. A GA4GH standard for generic access to data objects.                                                                            |
 | **Beacon**             | A GA4GH standard for discovery of genomic variants.                                                                                                          |
+| **NCP**                | **National Coordination Point**. The national node responsible for coordinating stakeholders and serving as the contact point for 1+MG in a Member State.    |
+| **DPbDD**              | **Data Protection by Design and Default**. A GDPR requirement ensuring privacy and security are embedded into the architecture from the start.               |
+| **Five Safes**         | A framework for secure data access: **Safe Projects** (legal use), **Safe People** (trusted researchers), **Safe Data** (non-identifiable), **Safe Settings** (secure IT), **Safe Outputs** (non-disclosive results). |
+| **Data Visiting**      | The paradigm where analysis algorithms move to the data (which stays local), and only aggregate results are returned. Distinct from "Data Sharing" (moving data). |
+| **Data Subject**       | The natural person (individual) whose personal data is being processed.                                                                                      |
+| **Data Custodian**     | An organization collecting and using data, making initial decisions on use, storage, and disposal.                                                           |
+| **Permit Authority**   | An entity given authority by legislation to grant or refuse access to data (may be distinct from the Data Holder).                                           |
