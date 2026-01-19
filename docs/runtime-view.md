@@ -110,6 +110,6 @@ sequenceDiagram
 
 [^1]: B1MG Deliverable D2.4 - Report on data access and governance framework. (https://zenodo.org/records/8411102)
 
-[^2]: GDI Deliverable D8.4 - Report on the implementation of the secure processing environment standards.(https://zenodo.org/records/11550561)
+[^2]: GDI Deliverable D8.8 - Evaluation of distributed analysis and federated learning infrastructure solutions and recommendations for adoption. (https://zenodo.org/records/10887366)
 
 [^3]: GDI - Pillar III User Journeys. (https://zenodo.org/records/17661188)

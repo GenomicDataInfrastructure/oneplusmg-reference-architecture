@@ -79,7 +79,7 @@ We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and cons
 ### 3.1. Logging & Auditing
 
 - **Audit Trails:** Every access to genomic data (successful or denied) MUST be logged.
-- **Privacy:** Logs must NOT contain PII (e.g., query parameters with variant details) but MUST record User ID, Resource ID, Timestamp, and Decision[^9].
+- **Privacy:** Logs must NOT contain PII (e.g., query parameters with variant details) but MUST record User ID, Resource ID, Timestamp, and Decision[^5].
 
 ### 3.2. Error Handling
 
@@ -99,8 +99,6 @@ We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and cons
 [^7]: GA4GH Passports Specification. (https://www.ga4gh.org/product/passports/)
 
 [^8]: B1MG Deliverable D2.4 - Report on data access and governance framework. (https://zenodo.org/records/8411102)
-
-[^9]: GDI Deliverable D6.6 - Report outlining the recommendations on data curation and ELSI compliance. (https://zenodo.org/records/10723494)
 
 [^10]: IETF RFC 7807 - Problem Details for HTTP APIs. (https://datatracker.ietf.org/doc/html/rfc7807)
 

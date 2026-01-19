@@ -62,7 +62,7 @@ The architectural constraints outlined in this section shape the design decision
 | **T07** | **Workflow Portability (RO-Crate/WfExS)** | Analysis pipelines must be containerized and packaged using **RO-Crate** standards and executable via **WfExS** (Workflow Execution Service) to ensure reproducibility and portability across heterogeneous nodes [^32]. |
 | **T08** | **Metadata Standard (HealthDCAT-AP)**     | All dataset metadata exposed for discovery must adhere to the **DCAT-AP 3.0** standard and its health-specific extension (**HealthDCAT-AP**) to ensure compatibility with the European Health Data Space (EHDS) [^11].   |
 | **T09** | **Federated Identity (LS-AAI)**           | User authentication and authorization must leverage the **Life Science AAI (LS-AAI)** infrastructure, supporting GA4GH Passports for interoperable claim transmission (e.g., researcher status, access rights) [^34].    |
-| **T10** | **Remote Visualization (htsget)**         | Nodes should support the **GA4GH htsget** API to enable efficient, remote visualization of large genomic alignments (BAM/CRAM) in client tools (e.g., IGV) without requiring full file download [^31].                   |
+| **T10** | **Remote Visualization (htsget)**         | Nodes should support the **GA4GH htsget** API to enable efficient, remote visualization of large genomic alignments (BAM/CRAM) in client tools (e.g., IGV) without requiring full file download [^32].                   |
 | **T11** | **API Transformation (JSLT)**             | To adapt internal data models to required external standards (Beacon v2, DCAT), nodes should employ flexible transformation layers (e.g., using **JSLT** templates) rather than hard-coding mappings [^11].              |
 | **T12** | **Separation of Concerns**                | Where possible, genomic and phenotypic data should be logically separated or pseudonymised separately to increase privacy protection [^30].                                                                              |
 | **T13** | **Encryption Mandate**                    | Personal data must be encrypted **at rest** and **in transit**. Encryption keys must be managed separately from the data storage [^30].                                                                                  |
@@ -110,8 +110,6 @@ The architectural constraints outlined in this section shape the design decision
 [^29]: GDI Deliverable D5.5 - Report outlining QoS metrics, reporting processes, and node TRLs defined. (https://zenodo.org/records/10256902)
 
 [^30]: B1MG Deliverable D2.4 - Report on data access and governance framework. (https://zenodo.org/records/8411102)
-
-[^31]: GDI Deliverable D8.4 - Report on the implementation of the secure processing environment standards.(https://zenodo.org/records/11550561)
 
 [^32]: GDI Deliverable D8.8 - Evaluation of distributed analysis and federated learning infrastructure solutions and recommendations for adoption. (https://zenodo.org/records/10887366)
 
