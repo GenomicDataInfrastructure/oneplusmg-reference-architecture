@@ -14,7 +14,7 @@ The deployment architecture respects the **Data Residency** constraints (Constra
 
 | Infrastructure Element            | Environment                    | Geography                                       | Responsibility                                    |
 | :-------------------------------- | :----------------------------- | :---------------------------------------------- | :------------------------------------------------ |
-| **Central Hub (Portal/Registry)** | Cloud (Azure/AWS/OpenStack)    | Brussels (EU Region)                            | Managed by **Genome EDIC**.                       |
+| **Central Hub (Portal/Registry)** | Cloud                          | Luxembourg (EU Region)                          | Managed by **Genome EDIC**.                       |
 | **National Node Infrastructure**  | Regional Cloud / HPC / On-Prem | Country-Specific (e.g., CSC Finland, BSC Spain) | Managed by **Member State**.                      |
 | **Network Layer**                 | Public Internet (TLS 1.3)      | Global                                          | Secure encrypted channels over standard internet. |
 
