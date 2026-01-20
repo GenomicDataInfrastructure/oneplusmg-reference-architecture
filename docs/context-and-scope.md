@@ -55,26 +55,6 @@ The 1+MG infrastructure is designed to align with the European Health Data Space
 | :--------------------------- | :------------------------------------------------------- | :-------------------------------------------------------------------------------- |
 | **Global Genomic Resources** | Non-EU biobanks (e.g., UK Biobank, All of Us, H3Africa). | **In:** Metadata Interoperability (Benchmarking)<br/>**Out:** Comparative Cohorts |
 
-## Technical Context
-
-The system relies on secure internet-based channels using standard genomic protocols.
-
-### Channels & Protocols
-
-| Channel           | Protocol                                     | Port | Usage                                                                      |
-| :---------------- | :------------------------------------------- | :--- | :------------------------------------------------------------------------- |
-| **Discovery API** | HTTPS / GA4GH Beacon v2                      | 443  | Public/Registered search for variant availability.                         |
-| **Access API**    | HTTPS / OIDC / GA4GH Passport                | 443  | Authentication and Authorization Claims transfer.                          |
-| **Compute API**   | HTTPS / GA4GH WES (Workflow Execution)       | 443  | Submission of containerized pipelines (Nextflow/Snakemake) to Nodes.       |
-| **Data API**      | HTTPS / GA4GH htsget / DRS (Data Repository) | 443  | Streaming genomic data (BAM/CRAM/VCF) to authorised local compute buffers. |
-| **Trust Anchor**  | PKI / eIDAS                                  | -    | Verification of Node identity and User identity.                           |
-
-### Technical Constraints
-
-- **No Raw Data Egress:** Raw genomic data files (VCF/BAM) must **never** leave the secure perimeter of the National Node (except for specific authorized download scenarios, which are rare).
-- **Federated Identity:** Users authenticate via their Home Organisation (LS AAI / LifeScience RI), not a central DB.
-- **Data Sovereignty:** Integration with Global Resources must respect EU data transfer regulations (GDPR Chapter V).
-
 [^22]: Masterdocument data governance. (extracted from Masterdocument_data-governance_recovered-formatting.docx)
 
 [^28]: GDI Deliverable D4.1 - Helpdesk roadmap. (https://zenodo.org/records/8017873)
