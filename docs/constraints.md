@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 
 sidebar_position: 2
+description: Anything that constrains teams in design and implementation decisions or decision about related processes. Can sometimes go beyond individual systems and are valid for whole organizations and companies.
 ---
 
 # Constraints

@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 
 sidebar_position: 1
+description: Short description of the requirements, driving forces, extract (or abstract) of requirements. Top three (max five) quality goals for the architecture which have highest priority for the major stakeholders. A table of important stakeholders with their expectation regarding architecture.
 ---
 
 # Introduction and Goals

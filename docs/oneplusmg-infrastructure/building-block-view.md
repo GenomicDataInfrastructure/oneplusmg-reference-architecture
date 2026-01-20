@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 
 sidebar_position: 5
+description: Static decomposition of the system, abstractions of source-code, shown as hierarchy of white boxes (containing black boxes), up to the appropriate level of detail.
 ---
 
 # Building Block View
@@ -11,8 +12,6 @@ sidebar_position: 5
 ## 1. Whitebox Overall System (Level 1)
 
 The 1+MG Infrastructure is decomposed into three primary logical zones:
-
-![Business Context](./assets/business_context.drawio.png)
 
 | System                                | Responsibility                                                                                                                                                                                                                                                                             |
 | :------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

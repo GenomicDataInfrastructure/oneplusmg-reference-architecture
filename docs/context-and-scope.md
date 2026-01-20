@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: CC-BY-4.0
 
 sidebar_position: 3
+description: Delimits your system from its (external) communication partners (neighboring systems and users). Specifies the external interfaces. Shown from a business/domain perspective (always) or a technical perspective (optional).
 ---
 
 # Context and Scope
