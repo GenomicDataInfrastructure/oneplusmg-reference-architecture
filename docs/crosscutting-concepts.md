@@ -9,9 +9,9 @@ description: Overall, principal regulations and solution approaches relevant in 
 
 # Cross-cutting Concepts
 
-## 1. Data Strategy
+## Data Strategy
 
-### 1.1. Metadata Model (HealthDCAT-AP)
+### Metadata Model (HealthDCAT-AP)
 
 To ensure semantic interoperability and alignment with the **European Health Data Space (EHDS)**, 1+MG adopts the **HealthDCAT-AP 5.0** standard (a health-specific profile of DCAT-AP)[^1] [^2] [^3].
 
@@ -24,7 +24,7 @@ To ensure semantic interoperability and alignment with the **European Health Dat
 - **Distribution:** The physical form (`dcat:Distribution`).
   - _Example:_ VCF File, Beacon API Endpoint, WES Endpoint.
 
-### 1.2. Identifier Schema
+### Identifier Schema
 
 All resources within the 1+MG network MUST adhere to the following **Persistent Identifier (PID)** pattern to guarantee global uniqueness across the federation[^1]:
 
@@ -42,11 +42,11 @@ All resources within the 1+MG network MUST adhere to the following **Persistent 
 - `GDI-FI-COHORT-001` (First cohort from Finland GDI Node)
 - `GOE-ES-SAMPLE-9942` (Genome of Europe sample from Spain)
 
-## 2. Security & Compliance
+## Security & Compliance
 
-## 2. Security & Compliance
+## Security & Compliance
 
-### 2.1. Data Protection by Design (Five Safes)
+### Data Protection by Design (Five Safes)
 
 We adhere to the **Five Safes** framework to demonstrate compliance with GDPR Data Protection by Design and Default (DPbDD)[^11]:
 
@@ -56,33 +56,33 @@ We adhere to the **Five Safes** framework to demonstrate compliance with GDPR Da
 4.  **Safe Settings:** Does the access facility limit unauthorized use? (Secure Processing Environment).
 5.  **Safe Outputs:** Is confidentiality maintained for outputs? (Airlock/Egress Control).
 
-### 2.2. Controlled Vocabularies
+### Controlled Vocabularies
 
 We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and consent status in a machine-readable way[^5].
 
 - `dpv:Consent`: Processing based on explicit data subject consent.
 - `dpv:LegitimateInterest`: Processing based on legitimate interest (secondary use).
 
-### 2.3. Encryption
+### Encryption
 
 - **Data at Rest:** All genomic files (VCF/BAM) are encrypted using **Crypt4GH** (standard container format for encrypted genomic data)[^6].
 - **Data in Transit:** TLS 1.3 is mandatory for all APIs.
 
-### 2.4. Authentication & Authorization
+### Authentication & Authorization
 
 - **Authentication:** Federated via **LS AAI**. Users authenticate at their Home Organisation (IdP).
 - **Authorization:** Claims are transported via **GA4GH Passports**[^7].
   - **Visas:** Signed JWTs asserting permissions (e.g., `ControlledAccessGrants`).
   - **Verification:** The National Node PEP MUST cryptographically verify the Visa signature against the DAC's public key[^8].
 
-## 3. Observability & Reliability
+## Observability & Reliability
 
-### 3.1. Logging & Auditing
+### Logging & Auditing
 
 - **Audit Trails:** Every access to genomic data (successful or denied) MUST be logged.
 - **Privacy:** Logs must NOT contain PII (e.g., query parameters with variant details) but MUST record User ID, Resource ID, Timestamp, and Decision[^5].
 
-### 3.2. Error Handling
+### Error Handling
 
 - **Standard:** APIs must return standard HTTP status codes (401 vs 403 distinction is critical).
 - **Format:** Error bodies MUST follow **RFC 7807** (Problem Details for HTTP APIs)[^10].

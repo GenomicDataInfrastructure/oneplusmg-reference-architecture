@@ -9,7 +9,7 @@ description: Known technical risks or technical debt. What potential problems ex
 
 # Risks and Technical Debt
 
-## 1. Risk Assessment (STRIDE)
+## Risk Assessment (STRIDE)
 
 This section applies the STRIDE threat model to the **Secure Processing Workflow** defined in the Runtime View.
 
@@ -22,7 +22,7 @@ This section applies the STRIDE threat model to the **Secure Processing Workflow
 | **Denial of Service**      | Medium       | High        | **Resource Quotas:** The WES API must implement rate limiting and job quotas per user/project.                                             | ⚠️ Open      |
 | **Elevation of Privilege** | High         | Low         | **Container Security:** Enforce "Rootless Containers" (Podman/Singularity) to prevent container escape vulnerabilities.                    | ✅ Mitigated |
 
-## 2. Technical Risks
+## Technical Risks
 
 ### TR-01: Immature Privacy Enhancing Technologies (PETs)
 
@@ -36,7 +36,7 @@ This section applies the STRIDE threat model to the **Secure Processing Workflow
 - **Impact:** There is a lack of empirical evidence that the proposed Reference Architecture works in production.
 - **Mitigation:** Focus on **FitSM** adoption and "Step-by-step" SOP implementation as defined in MS13.
 
-## 3. Business Risks (The Pre-Mortem)
+## Business Risks (The Pre-Mortem)
 
 **Scenario:** It is 2027, and the GDI Luxembourg Node has failed to attract researchers. **Why?**
 
@@ -44,7 +44,7 @@ This section applies the STRIDE threat model to the **Secure Processing Workflow
 2.  **Performance Bottlebeck:** The "Federated Query" (Beacon) was too slow because 1 or 2 nodes were always offline, causing the whole query to timeout or return partial results.
 3.  **Skill Gap:** The requirement for researchers to write complex WfExS/Nextflow workflows packed in RO-Crates was too high a barrier to entry compared to simply "downloading the CSV."
 
-## 4. Technical Debt
+## Technical Debt
 
 - **TD-01 (Missing Quality Gates):** Currently, there is no automated testing pipeline for the Infrastructure-as-Code (Terraform/Ansible).
 - **TD-02 (Manual Egress):** The "Airlock" egress check is currently a manual review process by a Data Steward, which scales linearly with people, not compute.

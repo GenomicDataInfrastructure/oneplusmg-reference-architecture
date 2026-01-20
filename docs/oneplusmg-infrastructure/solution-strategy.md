@@ -9,7 +9,7 @@ description: Summary of the fundamental decisions and solution strategies that s
 
 # Solution Strategy
 
-## 1. Governance & Federation
+## Governance & Federation
 
 The fundamental strategic decision for 1+MG is **Federation**.
 
@@ -17,14 +17,14 @@ The fundamental strategic decision for 1+MG is **Federation**.
 - **Bring Compute to Data:** Analysis algorithms are containerized (e.g., Nextflow pipelines) and dispatched to the data location, returning only aggregated results.
 - **Sovereignty First:** The architecture prioritizes the **Local Data Authority (DAC)**. No access is granted without a cryptographically verifiable token from the local DAC.
 
-## 2. Trust Framework
+## Trust Framework
 
 We employ a **Zero Trust** approach where identity and authorization are decoupled[^2].
 
 - **Identity (Who are you?):** Verified by **LS AAI** (Life Science Authentication and Authorization Infrastructure). Users log in via their home university or research institute.
 - **authorization (What can you do?):** Managed by **GA4GH Passports**. DACs issue "Visas" (signed claims) that travel with the user's request. The National Node verifies these Visas before executing any query or workload.
 
-## 3. Technology Stack & Standards
+## Technology Stack & Standards
 
 To ensure interoperability across 27+ countries, we rely strictly on open standards[^3].
 
@@ -37,7 +37,7 @@ To ensure interoperability across 27+ countries, we rely strictly on open standa
 | **Containerization** | **Docker** / **Singularity** | Ensuring reproducible analysis environments.                                  |
 | **Orchestration**    | **Kubernetes**               | Managing the lifecycle of microservices and compute jobs.                     |
 
-## 4. Organizational Strategy
+## Organizational Strategy
 
 - **GDI Starter Kit:** To support smaller Member States, we provide a "Reference Implementation" (Starter Kit) that can be deployed out-of-the-box to spin up a compliant National Node[^4]. It includes **Galaxy Europe** integration, **Beacon v2**, and **WfExS**.
 - **Separation of Concerns:** The **Genome EDIC** handles the catalog and governance logic, while **Member States** handle the storage and compute infrastructure.

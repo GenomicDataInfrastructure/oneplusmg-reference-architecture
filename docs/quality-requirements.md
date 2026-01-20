@@ -9,7 +9,7 @@ description: Quality requirements as scenarios, with quality tree to provide hig
 
 # Quality Requirements
 
-## 1. Quality Tree
+## Quality Tree
 
 The following quality attributes are critical for the success of the 1+MG Node.
 
@@ -20,7 +20,7 @@ The following quality attributes are critical for the success of the 1+MG Node.
 | **Usability**        | **High**     | The application process must be transparent for researchers.                         |
 | **Performance**      | **Medium**   | Discovery queries should be interactive; Compute jobs can be batch/long-running.     |
 
-## 2. Quality Scenarios
+## Quality Scenarios
 
 These scenarios map to the Sequence Diagrams in the **Runtime View**.
 

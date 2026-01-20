@@ -9,7 +9,7 @@ description: Behavior of building blocks as scenarios, covering important use ca
 
 # Runtime View
 
-## 1. Data Access Workflow (The "Single Access Principle")
+## Data Access Workflow (The "Single Access Principle")
 
 This scenario describes the primary flow for a researcher to discover, request, and access genomic data across borders, illustrating the interplay between central governance and local sovereignty[^1] [^2].
 
@@ -58,7 +58,7 @@ sequenceDiagram
 5.  **Provisioning:** If approved by all (or a subset of) nodes, the corresponding permissions are minted as **GA4GH Visas** by the **Trust Broker**.
 6.  **Secure Processing:** The researcher receives a **GA4GH Passport** containing these Visas. They submit a compute request (WES) to the National Node. The Node's **Policy Enforcement Point (PEP)** validates the Passport against the local access control list before executing the workflow in the isolated **SPE**.
 
-## 2. Secure Processing Workflow (TRE-FX)
+## Secure Processing Workflow (TRE-FX)
 
 This scenario details the execution phase (`ujGdi08`), focusing on how the **Secure Processing Environment (SPE)** ensures isolation while allowing external analysis[^2] [^3].
 

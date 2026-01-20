@@ -11,7 +11,7 @@ description: Anything that constrains teams in design and implementation decisio
 
 The architectural constraints outlined in this section shape the design decisions for the 1+MG Network. They are non-negotiable limitations imposed by regulation, politics, or organization.
 
-## 1. Regulatory & Legal Constraints
+## Regulatory & Legal Constraints
 
 | ID      | Constraint                               | Description                                                                                                                                                                                                                                                               |
 | :------ | :--------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -23,14 +23,14 @@ The architectural constraints outlined in this section shape the design decision
 | **L06** | **NIS2 Directive (Cybersecurity)**       | As a "Critical Entity" (Health Sector), the infrastructure must implement state-of-the-art cyber hygiene, mandatory incident reporting (24h warning/72h full report), and supply chain security auditing.[^5]                                                             |
 | **L07** | **International Transfers (GDPR Ch. V)** | Connections to **Global Resources** (e.g., All of Us, H3Africa) situated in non-EEA countries without an adequacy decision must rely on **Standard Contractual Clauses (SCCs)** or specific derogations (Art. 49).[^27]                                                   |
 
-## 2. Political Constraints
+## Political Constraints
 
 | ID      | Constraint                             | Description                                                                                                                                                                                                       |
 | :------ | :------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **P01** | **Local Sovereignty (The "Red Line")** | The architecture must ensure that **Local Data Authorities (DACs)** retain absolute vetting power over every access request. No "Central Super-Admin" can exist who can view data without local approval.[^6]     |
 | **P02** | **Equity & Inclusivity**               | The system must support smaller Member States with limited infrastructure. It cannot mandate expensive hardware (e.g., proprietary HPC) that would exclude less-resourced nations (The "Widening" principle).[^7] |
 
-## 3. Organizational Constraints
+## Organizational Constraints
 
 | ID      | Constraint                                   | Description                                                                                                                                                                                                                                                                              |
 | :------ | :------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ The architectural constraints outlined in this section shape the design decision
 | **O14** | **Project Funding Cycles**                   | Sustainability must be planned beyond typical 3-5 year EU project funding cycles.                                                                                                                                                                                                        |
 | **O15** | **Reprocessing Cost Sensitivity**            | The architecture must account for significant cost disparities in data reprocessing (e.g., ~€5 for short-read vs ~€530 for long-read per genome), necessitating careful decisions on when and where to standardize data [^10].                                                           |
 
-## 4. Technical Constraints
+## Technical Constraints
 
 | ID      | Constraint                                | Description                                                                                                                                                                                                              |
 | :------ | :---------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
