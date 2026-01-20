@@ -12,7 +12,7 @@ sidebar_position: 5
 
 The 1+MG Infrastructure is decomposed into three primary logical zones:
 
-![System Context](./assets/system_context.drawio.png)
+![Business Context](./assets/business_context.drawio.png)
 
 | System                                | Responsibility                                                                                                                                                                                                                                                                             |
 | :------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

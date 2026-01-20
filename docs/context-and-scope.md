@@ -12,8 +12,7 @@ sidebar_position: 3
 
 The **1+MG Infrastructure** operates as a federated network. It does not store data centrally; instead, it orchestrates access between **Data Users** and **Data Holders** across National borders.
 
-**System Context Diagram:**
-![System Context](./assets/system_context.drawio.png)
+![Business Context](./assets/business_context.drawio.png)
 
 ### Communication Partners
 
@@ -48,12 +47,6 @@ The 1+MG infrastructure is designed to align with the European Health Data Space
 
 - **Data Holder Role**: 1+MG nodes fulfill the obligations of "Data Holders" under EHDS (making data available).
 - **Secure Processing**: The 1+MG Secure Processing Environments (SPEs) align with EHDS requirements for Secure Processing Environments.
-
-### External Systems
-
-| System                       | Description                                              | Interaction                                                                       |
-| :--------------------------- | :------------------------------------------------------- | :-------------------------------------------------------------------------------- |
-| **Global Genomic Resources** | Non-EU biobanks (e.g., UK Biobank, All of Us, H3Africa). | **In:** Metadata Interoperability (Benchmarking)<br/>**Out:** Comparative Cohorts |
 
 [^22]: Masterdocument data governance. (extracted from Masterdocument_data-governance_recovered-formatting.docx)
 
