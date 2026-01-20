@@ -95,20 +95,12 @@ const config: Config = {
               to: "/docs/context-and-scope",
             },
             {
-              label: "Solution Strategy",
-              to: "/docs/solution-strategy",
+              label: "1+MG Infrastructure",
+              to: "/docs/category/1mg-infrastructure",
             },
             {
-              label: "Building Block View",
-              to: "/docs/building-block-view",
-            },
-            {
-              label: "Runtime View",
-              to: "/docs/runtime-view",
-            },
-            {
-              label: "Deployment View",
-              to: "/docs/deployment-view",
+              label: "1+MG Node",
+              to: "/docs/category/1mg-node",
             },
             {
               label: "Crosscutting Concepts",

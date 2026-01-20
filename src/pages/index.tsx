@@ -61,27 +61,17 @@ function Homepage() {
               systems and users). Specifies the external interfaces.
             </li>
             <li>
-              <a href="./docs/solution-strategy">Solution strategy</a>. Summary
-              of the fundamental decisions and solution strategies that shape
-              the architecture.
+              <a href="./docs/category/1mg-infrastructure">
+                1+MG Infrastructure
+              </a>
+              . Overview of the infrastructure components, their
+              responsibilities, and how they interact to provide the necessary
+              services for the 1+MG Network.
             </li>
             <li>
-              <a href="./docs/building-block-view">Building block view</a>.
-              Static decomposition of the system into building blocks
-              (components, modules, subsystems, layers, packages, etc.) and
-              their responsibilities.
-            </li>
-            <li>
-              <a href="./docs/runtime-view">Runtime view</a>. Behavior of
-              building blocks as scenarios, covering important use cases or
-              features, interactions at critical external interfaces, operation
-              and administration plus error and exception behavior.
-            </li>
-            <li>
-              <a href="./docs/deployment-view">Deployment view</a>. Technical
-              infrastructure with environments, computers, processors,
-              topologies. Mapping of (software) building blocks to
-              infrastructure elements.
+              <a href="./docs/category/1mg-node">1+MG Node</a>. Detailed
+              description of the architecture of a single 1+MG Node, including
+              its building blocks, their responsibilities, and interactions.
             </li>
             <li>
               <a href="./docs/crosscutting-concepts">Crosscutting concepts</a>.
