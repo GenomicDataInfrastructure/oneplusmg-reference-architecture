@@ -47,60 +47,44 @@ function Homepage() {
           <ol>
             <li>
               <a href="./docs/introduction-and-goals">Introduction and goals</a>
-              . Short description of the requirements, driving forces, extract
+              : Short description of the requirements, driving forces, extract
               (or abstract) of requirements. and roles.
             </li>
             <li>
-              <a href="./docs/constraints">Constraints</a>. Anything that
+              <a href="./docs/constraints">Constraints</a>: Anything that
               constrains teams in design and implementation decisions or
               decision about related processes.
             </li>
             <li>
-              <a href="./docs/context-and-scope">Context and scope</a>. Delimits
+              <a href="./docs/context-and-scope">Context and scope</a>: Delimits
               the system from its (external) communication partners (neighboring
               systems and users). Specifies the external interfaces.
             </li>
             <li>
-              <a href="./docs/category/1mg-infrastructure">
-                1+MG Infrastructure
-              </a>
-              . Overview of the infrastructure components, their
-              responsibilities, and how they interact to provide the necessary
-              services for the 1+MG Network.
+              <a href="./docs/category/1mg-network">1+MG Network</a>: Overview
+              of the components, their responsibilities, and how they interact
+              to provide the necessary services for the 1+MG Network.
             </li>
             <li>
-              <a href="./docs/category/1mg-node">1+MG Node</a>. Detailed
+              <a href="./docs/category/1mg-node">1+MG Node</a>: Detailed
               description of the architecture of a single 1+MG Node, including
               its building blocks, their responsibilities, and interactions.
             </li>
             <li>
-              <a href="./docs/crosscutting-concepts">Crosscutting concepts</a>.
+              <a href="./docs/crosscutting-concepts">Crosscutting Concepts</a>:
               Overall, principal regulations and solution approaches relevant in
-              multiple parts (→ cross-cutting) of the system.
+              multiple parts (→ crosscutting) of the system.
             </li>
             <li>
-              <a href="./docs/architecture-decisions">Architecture decisions</a>
-              . Important, expensive, critical, large scale or risky
+              <a href="./docs/architectural-decisions">
+                Architectural Decisions
+              </a>
+              : Important, expensive, critical, large scale or risky
               architecture decisions including rationales.
             </li>
             <li>
-              <a href="./docs/quality-requirements">Quality Requirements</a>.
-              Quality requirements as scenarios, with quality tree to provide
-              high-level overview.
-            </li>
-            <li>
-              <a href="./docs/risks-and-technical-debt">
-                Risks and technical debt
-              </a>
-              . Known technical risks or technical debt.
-            </li>
-            <li>
-              <a href="./docs/glossary">Glossary</a>. Important domain and
+              <a href="./docs/glossary">Glossary</a>: Important domain and
               technical terms that stakeholders use when discussing the system.
-            </li>
-            <li>
-              <a href="./docs/references">References</a>. External documents and
-              resources referenced in this document.
             </li>
           </ol>
         </div>

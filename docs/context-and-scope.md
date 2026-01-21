@@ -11,7 +11,7 @@ description: Delimits your system from its (external) communication partners (ne
 
 ## Business Context
 
-The **1+MG Infrastructure** operates as a federated network. It does not store data centrally; instead, it orchestrates access between **Data Users** and **Data Holders** across National borders.
+The **1+MG Network** operates as a federated network. It does not store data centrally; instead, it orchestrates access between **Data Users** and **Data Holders** across National borders.
 
 ![Business Context](./assets/business_context.drawio.png)
 
@@ -32,19 +32,34 @@ The **1+MG Infrastructure** operates as a federated network. It does not store d
 
 ### Governance Context
 
-The 1+MG infrastructure operates under a specific governance framework designed to balance cross-border efficiency with national sovereignty.[^30]
+The 1+MG Network operates under a specific governance framework designed to balance cross-border efficiency with national sovereignty.[^30] It is anchored by the **Transnational Code of Conduct** to bridge legal gaps.
+
+**The Data Journey (Standard Lifecycle):** [^30]
+
+1.  **Preparation**: Pre-processing to agreed standards.
+2.  **Inclusion**: Legal/physical transfer to the node.
+3.  **Storage**: GDPR compliant environment.
+4.  **Discovery**: Metadata sharing via APIs.
+5.  **Access**: Authentication & Authorization (DAC).
+6.  **Use**: Processing in Secure Processing Environments (SPEs).
+7.  **Archiving**: Long-term retention/deletion.
+
+However, evaluations highlight significant existing fragmentation:
+
+- **National Silos:** Some infrastructures risk becoming silos due to local language requirements or strict national certification demands for compute environments.[^11]
+- **Ethics Fragmentation:** There is currently no EU-wide harmonised ethical approval procedure; decisions are made on a case-by-case basis.[^11]
 
 - **Single Access Principle:** Users submit one application through a central portal, which is reviewed by a central 1+MG Data Access Committee (DAC).
 - **National Veto:** While the central DAC provides a recommendation/decision, the ultimate decision remains with the Data Providers/National DACs, who retain a right of veto.
 - **Controller Relationships:**
   - **Data Provider:** Acts as **Controller** for data inclusion, storage, and making data available.
   - **Data User:** Acts as **Controller** for the processing of data for their specific research purpose.
-  - **1+MG Infrastructure:** Acts as **Processor** providing the secure environment and tools.
+  - **1+MG Network:** Acts as **Processor** providing the secure environment and tools.
   - **1+MG CC/DAC:** Acts as **Joint Controller** (with Data Providers) for the data disclosure process (provision of access).
 
 ### EHDS Alignment
 
-The 1+MG infrastructure is designed to align with the European Health Data Space (EHDS). In the context of EHDS, 1+MG nodes and the central infrastructure aim to function as an **Authorised Participant** in the HealthData@EU infrastructure.[^30]
+The 1+MG Network is designed to align with the European Health Data Space (EHDS). In the context of EHDS, 1+MG nodes and the central infrastructure aim to function as an **Authorised Participant** in the HealthData@EU infrastructure.[^30]
 
 - **Data Holder Role**: 1+MG nodes fulfill the obligations of "Data Holders" under EHDS (making data available).
 - **Secure Processing**: The 1+MG Secure Processing Environments (SPEs) align with EHDS requirements for Secure Processing Environments.
@@ -54,3 +69,5 @@ The 1+MG infrastructure is designed to align with the European Health Data Space
 [^28]: GDI Deliverable D4.1 - Helpdesk roadmap. (https://zenodo.org/records/8017873)
 
 [^30]: B1MG Deliverable D2.4 - Report on data access and governance framework. (https://zenodo.org/records/8411102)
+
+[^11]: GDI Deliverable D2.9 - Evaluation of data governance experiences - Report. (https://zenodo.org/records/10069814)

@@ -11,7 +11,7 @@ description: Static decomposition of the system, abstractions of source-code, sh
 
 ## Whitebox Overall System (Level 1)
 
-The 1+MG Infrastructure is decomposed into three primary logical zones:
+The 1+MG Network is decomposed into three primary logical zones:
 
 | System                                | Responsibility                                                                                                                                                                                                                                                                             |
 | :------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

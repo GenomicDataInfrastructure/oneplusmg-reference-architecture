@@ -95,8 +95,8 @@ const config: Config = {
               to: "/docs/context-and-scope",
             },
             {
-              label: "1+MG Infrastructure",
-              to: "/docs/category/1mg-infrastructure",
+              label: "1+MG Network",
+              to: "/docs/category/1mg-network",
             },
             {
               label: "1+MG Node",
@@ -109,14 +109,6 @@ const config: Config = {
             {
               label: "Architectural Decisions",
               to: "/docs/architectural-decisions",
-            },
-            {
-              label: "Quality Requirements",
-              to: "/docs/quality-requirements",
-            },
-            {
-              label: "Risks and Technical Debt",
-              to: "/docs/risks-and-technical-debt",
             },
             {
               label: "Glossary",

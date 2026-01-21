@@ -30,7 +30,7 @@ These scenarios map to the Sequence Diagrams in the **Runtime View**.
 - **Stimulus:** Submission of a WES request.
 - **Response:** The system verifies the GA4GH Passport. The compute node has **NO internet access**. Data is encrypted at rest.
 - **Measurement:** No data exfiltration possible. Compliance with "Five Safes".
-- **Link:** [Runtime View -> Secure Processing Workflow](oneplusmg-infrastructure/runtime-view#secure-processing-workflow-tre-fx)
+- **Link:** [Runtime View -> Secure Processing Workflow](runtime-view#secure-processing-workflow-tre-fx)
 
 ### QS-02: Cross-Border Discovery (Interoperability)
 
@@ -38,7 +38,7 @@ These scenarios map to the Sequence Diagrams in the **Runtime View**.
 - **Stimulus:** "Does any node have BRCA1 variants?"
 - **Response:** All nodes respond with a count (or error) within 10 seconds.
 - **Measurement:** 95% success rate. Standardized Beacon v2 response format.
-- **Link:** [Runtime View -> Data Access Workflow](oneplusmg-infrastructure/runtime-view#data-access-workflow-the-single-access-principle)
+- **Link:** [Runtime View -> Data Access Workflow](runtime-view#data-access-workflow-the-single-access-principle)
 
 ### QS-03: Data Sovereignty (Compliance)
 
@@ -46,7 +46,7 @@ These scenarios map to the Sequence Diagrams in the **Runtime View**.
 - **Stimulus:** A valid Central DAC approval is received by a National Node.
 - **Response:** The National Node (Data Holder) re-evaluates the request against local law and may **Veto** the access.
 - **Measurement:** Access is DENIED locally despite Central approval.
-- **Link:** [Runtime View -> Data Access Workflow](oneplusmg-infrastructure/runtime-view#data-access-workflow-the-single-access-principle)
+- **Link:** [Runtime View -> Data Access Workflow](runtime-view#data-access-workflow-the-single-access-principle)
 
 ### QS-04: Operational Compliance (Maintainability)
 
@@ -54,7 +54,7 @@ These scenarios map to the Sequence Diagrams in the **Runtime View**.
 - **Stimulus:** Onboarding process initiation.
 - **Response:** Staff is trained on "EU-wide SOPs" and "Node-specific SOPs" within 2 weeks. Training is recorded.
 - **Measurement:** 100% of staff have valid Training Records (Annex 1 of MS13).
-- **Link:** [Building Block View -> Management Zone](oneplusmg-infrastructure/building-block-view.md)
+- **Link:** [Building Block View -> Management Zone](building-block-view.md)
 
 ### QS-05: Service Management (Compliance)
 
