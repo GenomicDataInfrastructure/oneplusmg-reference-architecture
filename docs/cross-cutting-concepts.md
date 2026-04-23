@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: CC-BY-4.0
 
 sidebar_position: 8
-description: Overall, principal regulations and solution approaches relevant in multiple parts (→ crosscutting) of the system. Concepts are often related to multiple building blocks. Include different topics like domain models, architecture patterns and -styles, rules for using specific technology and implementation rules.
+description: Overall, principal regulations and solution approaches relevant in multiple parts (→ cross-cutting) of the system. Concepts are often related to multiple building blocks. Include different topics like domain models, architecture patterns and -styles, rules for using specific technology and implementation rules.
 ---
 
-# Crosscutting Concepts
+# Cross-cutting Concepts
 
 ## Data Strategy
 
@@ -44,8 +44,6 @@ All resources within the 1+MG network MUST adhere to the following **Persistent 
 
 ## Security & Compliance
 
-## Security & Compliance
-
 ### Data Protection by Design (Five Safes)
 
 We adhere to the **Five Safes** framework to demonstrate compliance with GDPR Data Protection by Design and Default (DPbDD)[^11]:
@@ -70,7 +68,7 @@ We rely on the **Data Privacy Vocabulary (DPV)** to express legal bases and cons
 
 ### Authentication & Authorization
 
-- **Authentication:** Federated via **LS AAI**. Users authenticate at their Home Organisation (IdP).
+- **Authentication:** Federated via **AAI**. Users authenticate at their Home Organisation (IdP).
 - **Authorization:** Claims are transported via **GA4GH Passports**[^7].
   - **Visas:** Signed JWTs asserting permissions (e.g., `ControlledAccessGrants`).
   - **Verification:** The National Node PEP MUST cryptographically verify the Visa signature against the DAC's public key[^8].

@@ -95,20 +95,40 @@ const config: Config = {
               to: "/docs/context-and-scope",
             },
             {
-              label: "1+MG Network",
-              to: "/docs/category/1mg-network",
+              label: "Solution Strategy",
+              to: "/docs/solution-strategy",
             },
             {
-              label: "1+MG Node",
-              to: "/docs/category/1mg-node",
+              label: "Data Onboarding",
+              to: "/docs/category/data-onboarding",
             },
             {
-              label: "Crosscutting Concepts",
-              to: "/docs/crosscutting-concepts",
+              label: "Data Provider Onboarding",
+              to: "/docs/category/data-provider-onboarding",
+            },
+            {
+              label: "Data Subject Onboarding",
+              to: "/docs/category/data-subject-onboarding",
+            },
+            {
+              label: "User Organisation Onboarding",
+              to: "/docs/category/user-organisation-onboarding",
+            },
+            {
+              label: "Cross-cutting Concepts",
+              to: "/docs/cross-cutting-concepts",
             },
             {
               label: "Architectural Decisions",
               to: "/docs/architectural-decisions",
+            },
+            {
+              label: "Quality Requirements",
+              to: "/docs/quality-requirements",
+            },
+            {
+              label: "Risk and Technical Debt",
+              to: "/docs/risks-and-technical-debt",
             },
             {
               label: "Glossary",
