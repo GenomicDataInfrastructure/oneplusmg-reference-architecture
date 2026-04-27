@@ -61,24 +61,41 @@ function Homepage() {
               systems and users). Specifies the external interfaces.
             </li>
             <li>
-              <a href="./docs/solution-strategy">Solution Strategy</a>: Summary and fundamental decisions or solution strategies that shape the architecture.
+              <a href="./docs/solution-strategy">Solution Strategy</a>: Summary
+              and fundamental decisions or solution strategies that shape the
+              architecture.
             </li>
             <li>
-              <a href="./docs/category/data-onboarding">Data Onboarding</a>: Detailed description of the architecture processes for Data Onboarding, including building block, runtime, and deployment views.
+              <a href="./docs/category/data-onboarding">Data Onboarding</a>:
+              Detailed description of the architecture processes for Data
+              Onboarding, including building block, runtime, and deployment
+              views.
             </li>
             <li>
-              <a href="./docs/category/data-provider-onboarding">Data Provider Onboarding</a>: Detailed description of the architecture for Data Provider Onboarding.
+              <a href="./docs/category/data-provider-onboarding">
+                Data Provider Onboarding
+              </a>
+              : Detailed description of the architecture for Data Provider
+              Onboarding.
             </li>
             <li>
-              <a href="./docs/category/data-subject-onboarding">Data Subject Onboarding</a>: Detailed description of the architecture for Data Subject Onboarding.
+              <a href="./docs/category/data-subject-onboarding">
+                Data Subject Onboarding
+              </a>
+              : Detailed description of the architecture for Data Subject
+              Onboarding.
             </li>
             <li>
-              <a href="./docs/category/user-organisation-onboarding">User Organisation Onboarding</a>: Detailed description of the architecture for User Organisation Onboarding.
+              <a href="./docs/category/user-organisation-onboarding">
+                User Organisation Onboarding
+              </a>
+              : Detailed description of the architecture for User Organisation
+              Onboarding.
             </li>
             <li>
-              <a href="./docs/cross-cutting-concepts">Cross-cutting Concepts</a>:
-              Overall, principal regulations and solution approaches relevant in
-              multiple parts (→ cross-cutting) of the system.
+              <a href="./docs/cross-cutting-concepts">Cross-cutting Concepts</a>
+              : Overall, principal regulations and solution approaches relevant
+              in multiple parts (→ cross-cutting) of the system.
             </li>
             <li>
               <a href="./docs/architectural-decisions">
@@ -89,10 +106,17 @@ function Homepage() {
             </li>
             <li>
               <a href="./docs/quality-requirements">Quality Requirements</a>:
-              Quality requirements as scenarios, with quality tree to provide high-level overview. The most important quality goals should have been described in section 1.2. (quality goals).
+              Quality requirements as scenarios, with quality tree to provide
+              high-level overview. The most important quality goals should have
+              been described in section 1.2. (quality goals).
             </li>
             <li>
-              <a href="./docs/risks-and-technical-debt">Risk and Technical Debt</a>: Known technical risks or technical debt. What potential problems exist within or around the system? What does the development team feel miserable about?
+              <a href="./docs/risks-and-technical-debt">
+                Risk and Technical Debt
+              </a>
+              : Known technical risks or technical debt. What potential problems
+              exist within or around the system? What does the development team
+              feel miserable about?
             </li>
             <li>
               <a href="./docs/glossary">Glossary</a>: Important domain and

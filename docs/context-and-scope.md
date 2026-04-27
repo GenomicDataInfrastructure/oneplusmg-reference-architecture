@@ -34,15 +34,31 @@ The **1+MG Network** operates as a federated network. It does not store data cen
 
 The 1+MG Network operates under a specific governance framework designed to balance cross-border efficiency with national sovereignty.[^30] It is anchored by the **Transnational Code of Conduct** to bridge legal gaps.
 
-**The Data Journey (Standard Lifecycle):** [^30]
+**The highlevel process:** [^30]
 
-1.  **Preparation**: Pre-processing to agreed standards.
-2.  **Inclusion**: Legal/physical transfer to the node.
-3.  **Storage**: GDPR compliant environment.
-4.  **Discovery**: Metadata sharing via APIs.
-5.  **Access**: Authentication & Authorization (DAC).
-6.  **Use**: Processing in Secure Processing Environments (SPEs).
-7.  **Archiving**: Long-term retention/deletion.
+![Highlevel process](./assets/highlevel_process.drawio.png)
+
+1. **Data Inclusion**
+   1. **Data Provider Onboarding**: Registering and validating organizations that supply data to the network.
+   1. **Data Subject Onboarding**: Managing patient/subject consent and transparency for their data inclusion.
+   1. **Data Onboarding**: Ingesting, harmonizing, and securely storing datasets within a node.
+1. **Data Access**
+   1. **User Organisation Onboarding**: Registering and verifying user organizations applying for data access.
+   1. **Data Discovery**: Enabling users to search and identify relevant datasets across the federated network.
+   1. **Access Request Submission**: Allowing users to submit detailed applications to access specific datasets.
+   1. **Access Request Review**: Central and National DACs evaluating the request based on scientific, ethical, and compliance criteria.
+   1. **Contract Signature**: Formalizing the data access agreement between the user and data providers.
+   1. **Access Preparation**: Setting up the secure processing environment and configuring permissions.
+1. **Data Use**
+   1. **Data Provisioning**: Making the requested data securely available to the authorized user's environment.
+   1. **Data Analysis**: Users executing analytical workflows on the provisioned data within the secure environment.
+   1. **Extended Data Analysis**: Requesting additional time or resources to complete ongoing analyses.
+   1. **Clinical Trial Contact**: Re-contacting data subjects for potential participation in clinical trials, if consented.
+   1. **Output Review**: Reviewing analysis results to ensure no sensitive or re-identifying information is exported.
+   1. **Output Peer-review**: Academic or scientific evaluation of the final research outputs.
+   1. **Project Archival**: Securely closing the project, archiving logs and the compute environment.
+   1. **Output Contesting**: Handling disputes regarding denied outputs or access decisions.
+   1. **Healthcare Contact**: Informing data subject's healthcare provider of actionable incidental findings or requesting for further information.
 
 However, evaluations highlight significant existing fragmentation:
 
