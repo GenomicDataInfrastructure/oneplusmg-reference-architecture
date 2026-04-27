@@ -37,3 +37,13 @@ To support the processes outlined in the runtime view—such as registration, ve
 - **Central Coordination - Service Desk / CRM System:** Administrative dashboard for reviewing records, vetting organisations, and tracking overall onboarding progress.
 - **Service Desk / CRM System - Contract Lifecycle Management System:** API integration to automatically trigger contract generation upon successful vetting, and to sync signature completion status back to the CRM workflow.
 - **Service Desk / CRM System - Identity and Access Management System:** Integration via API to automatically create identities and map roles once vetting is complete and contracts are fully signed.
+
+### Data Types
+
+| Name                                            | Risk Classification | Comments                                                                                                                                                      |
+| :---------------------------------------------- | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Minimum Organisational Details**              | Low                 | Basic profile data (e.g., legal entity name, representatives) needed to register an organisation. Stored in the Service Desk / CRM.                           |
+| **Joining Agreement / Terms of Service**        | Low                 | Signed legal document accepting the terms of service of the network. Managed by the CLM system.                                                               |
+| **Joint Controllership & Healthcare Contracts** | Medium              | Legally binding agreements governing data protection responsibilities and healthcare specific reuse. Managed by the CLM system with an immutable audit trail. |
+| **Signing Official Identity**                   | High                | Authentication credentials and roles for the designated signing official. Crucial for access control; managed securely by the IAM Service.                    |
+| **End-user Access Records**                     | High                | Personal data, affiliations, and assigned roles of researchers. Defines who is authorized to submit data access requests. Managed across CRM and IAM.         |
