@@ -34,9 +34,9 @@ The **1+MG Network** operates as a federated network. It does not store data cen
 
 The 1+MG Network operates under a specific governance framework designed to balance cross-border efficiency with national sovereignty.[^30] It is anchored by the **Transnational Code of Conduct** to bridge legal gaps.
 
-**The highlevel process:** [^30]
+**The high-level process:** [^30]
 
-![Highlevel process](./assets/highlevel_process.drawio.png)
+![High-level process](./assets/highlevel_process.drawio.png)
 
 1. **Data Inclusion**
    1. **Data Provider Onboarding**: Registering and validating organizations that supply data to the network.
@@ -47,7 +47,7 @@ The 1+MG Network operates under a specific governance framework designed to bala
    1. **Data Discovery**: Enabling users to search and identify relevant datasets across the federated network.
    1. **Access Request Submission**: Allowing users to submit detailed applications to access specific datasets.
    1. **Access Request Review**: Central and National DACs evaluating the request based on scientific, ethical, and compliance criteria.
-   1. **Contract Signature**: Formalizing the data access agreement between the user and data providers.
+   1. **Data Use Agreement Signature**: Formalizing the data access agreement between the user and data providers.
    1. **Access Preparation**: Setting up the secure processing environment and configuring permissions.
 1. **Data Use**
    1. **Data Provisioning**: Making the requested data securely available to the authorized user's environment.

@@ -127,6 +127,10 @@ const config: Config = {
               to: "/docs/category/access-request-review",
             },
             {
+              label: "Data Use Agreement Signature",
+              to: "/docs/category/data-use-agreement-signature",
+            },
+            {
               label: "Access Preparation",
               to: "/docs/category/access-preparation",
             },

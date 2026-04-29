@@ -111,6 +111,13 @@ function Homepage() {
               Review.
             </li>
             <li>
+              <a href="./docs/category/data-use-agreement-signature">
+                Data Use Agreement Signature
+              </a>
+              : Detailed description of the architecture for Data Use Agreement
+              Signature.
+            </li>
+            <li>
               <a href="./docs/category/access-preparation">
                 Access Preparation
               </a>
