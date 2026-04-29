@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2025 PNED G.I.E.
+// SPDX-FileCopyrightText: 2026 PNED G.I.E.
 //
 // SPDX-License-Identifier: Apache-2.0
 import { themes as prismThemes } from "prism-react-renderer";
@@ -99,20 +99,72 @@ const config: Config = {
               to: "/docs/solution-strategy",
             },
             {
-              label: "Data Onboarding",
-              to: "/docs/category/data-onboarding",
+              label: "Data Subject Onboarding",
+              to: "/docs/category/data-subject-onboarding",
             },
             {
               label: "Data Provider Onboarding",
               to: "/docs/category/data-provider-onboarding",
             },
             {
-              label: "Data Subject Onboarding",
-              to: "/docs/category/data-subject-onboarding",
+              label: "Data Onboarding",
+              to: "/docs/category/data-onboarding",
             },
             {
               label: "User Organisation Onboarding",
               to: "/docs/category/user-organisation-onboarding",
+            },
+            {
+              label: "Data Discovery",
+              to: "/docs/category/data-discovery",
+            },
+            {
+              label: "Access Request Submission",
+              to: "/docs/category/access-request-submission",
+            },
+            {
+              label: "Access Request Review",
+              to: "/docs/category/access-request-review",
+            },
+            {
+              label: "Access Preparation",
+              to: "/docs/category/access-preparation",
+            },
+            {
+              label: "Data Provisioning",
+              to: "/docs/category/data-provisioning",
+            },
+            {
+              label: "Data Analysis",
+              to: "/docs/category/data-analysis",
+            },
+            {
+              label: "Output Review",
+              to: "/docs/category/output-review",
+            },
+            {
+              label: "Output Peer-review",
+              to: "/docs/category/output-peer-review",
+            },
+            {
+              label: "Project Archival",
+              to: "/docs/category/project-archival",
+            },
+            {
+              label: "Output Contesting",
+              to: "/docs/category/output-contesting",
+            },
+            {
+              label: "Extended Data Analysis",
+              to: "/docs/category/extended-data-analysis",
+            },
+            {
+              label: "Healthcare Contact",
+              to: "/docs/category/healthcare-contact",
+            },
+            {
+              label: "Clinical Trials Contact",
+              to: "/docs/category/clinical-trials-contact",
             },
             {
               label: "Cross-cutting Concepts",

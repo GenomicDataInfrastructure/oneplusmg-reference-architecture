@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2025 PNED G.I.E.
+// SPDX-FileCopyrightText: 2026 PNED G.I.E.
 //
 // SPDX-License-Identifier: Apache-2.0
 
@@ -66,10 +66,11 @@ function Homepage() {
               architecture.
             </li>
             <li>
-              <a href="./docs/category/data-onboarding">Data Onboarding</a>:
-              Detailed description of the architecture processes for Data
-              Onboarding, including building block, runtime, and deployment
-              views.
+              <a href="./docs/category/data-subject-onboarding">
+                Data Subject Onboarding
+              </a>
+              : Detailed description of the architecture for Data Subject
+              Onboarding.
             </li>
             <li>
               <a href="./docs/category/data-provider-onboarding">
@@ -79,11 +80,10 @@ function Homepage() {
               Onboarding.
             </li>
             <li>
-              <a href="./docs/category/data-subject-onboarding">
-                Data Subject Onboarding
-              </a>
-              : Detailed description of the architecture for Data Subject
-              Onboarding.
+              <a href="./docs/category/data-onboarding">Data Onboarding</a>:
+              Detailed description of the architecture processes for Data
+              Onboarding, including building block, runtime, and deployment
+              views.
             </li>
             <li>
               <a href="./docs/category/user-organisation-onboarding">
@@ -91,6 +91,76 @@ function Homepage() {
               </a>
               : Detailed description of the architecture for User Organisation
               Onboarding.
+            </li>
+            <li>
+              <a href="./docs/category/data-discovery">Data Discovery</a>:
+              Detailed description of the architecture for Data Discovery.
+            </li>
+            <li>
+              <a href="./docs/category/access-request-submission">
+                Access Request Submission
+              </a>
+              : Detailed description of the architecture for Access Request
+              Submission.
+            </li>
+            <li>
+              <a href="./docs/category/access-request-review">
+                Access Request Review
+              </a>
+              : Detailed description of the architecture for Access Request
+              Review.
+            </li>
+            <li>
+              <a href="./docs/category/access-preparation">
+                Access Preparation
+              </a>
+              : Detailed description of the architecture for Access Preparation.
+            </li>
+            <li>
+              <a href="./docs/category/data-provisioning">Data Provisioning</a>:
+              Detailed description of the architecture for Data Provisioning.
+            </li>
+            <li>
+              <a href="./docs/category/data-analysis">Data Analysis</a>:
+              Detailed description of the architecture for Data Analysis.
+            </li>
+            <li>
+              <a href="./docs/category/output-review">Output Review</a>:
+              Detailed description of the architecture for Output Review.
+            </li>
+            <li>
+              <a href="./docs/category/output-peer-review">
+                Output Peer-review
+              </a>
+              : Detailed description of the architecture for Output Peer-review.
+            </li>
+            <li>
+              <a href="./docs/category/project-archival">Project Archival</a>:
+              Detailed description of the architecture for Project Archival.
+            </li>
+            <li>
+              <a href="./docs/category/output-contesting">Output Contesting</a>:
+              Detailed description of the architecture for Output Contesting.
+            </li>
+            <li>
+              <a href="./docs/category/extended-data-analysis">
+                Extended Data Analysis
+              </a>
+              : Detailed description of the architecture for Extended Data
+              Analysis.
+            </li>
+            <li>
+              <a href="./docs/category/healthcare-contact">
+                Healthcare Contact
+              </a>
+              : Detailed description of the architecture for Healthcare Contact.
+            </li>
+            <li>
+              <a href="./docs/category/clinical-trials-contact">
+                Clinical Trials Contact
+              </a>
+              : Detailed description of the architecture for Clinical Trials
+              Contact.
             </li>
             <li>
               <a href="./docs/cross-cutting-concepts">Cross-cutting Concepts</a>

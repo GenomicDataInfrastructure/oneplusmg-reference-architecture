@@ -1,9 +1,9 @@
 ---
-# SPDX-FileCopyrightText: 2025 PNED G.I.E.
+# SPDX-FileCopyrightText: 2026 PNED G.I.E.
 #
 # SPDX-License-Identifier: CC-BY-4.0
 
-sidebar_position: 12
+sidebar_position: 26
 description: Important domain and technical terms that stakeholders use when discussing the system. Also, translation reference if you work in a multi-language environment.
 ---
 
