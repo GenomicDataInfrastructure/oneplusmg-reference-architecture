@@ -1,5 +1,5 @@
 ---
-# SPDX-FileCopyrightText: 2025 PNED G.I.E.
+# SPDX-FileCopyrightText: 2026 PNED G.I.E.
 #
 # SPDX-License-Identifier: CC-BY-4.0
 
@@ -17,7 +17,7 @@ This section describes the dynamic behavior and specific scenarios involved in t
 
 ## Overview
 
-![Data Provider Onboarding](./assets/data_provider_onboarding_runtime.drawio.png)
+![Data Provider Onboarding](./assets/data_provider_onboarding_sipoc.drawio.png)
 
 ## Define National Strategy
 
@@ -35,14 +35,6 @@ A structured plan is developed by the National Coordination Point to systematica
 
 The National Coordination Point officially reaches out to the identified institutions to initiate the onboarding discussion, presenting the value proposition and requirements for joining the federated network.
 
-## Inform Data Provider about Legal and Ethical Requirements
-
-The Data Provider is supplied with comprehensive documentation regarding the necessary ethical standards, patient consent models, and legal frameworks required to ensure strict compliance with European and national regulations.
-
-## Inform Data Provider about metadata requirements
-
-Detailed technical guidelines are provided to the Data Provider, emphasizing the specific semantic ontologies, data models, and 1+MG metadata schemas that must be adopted to ensure data interoperability and adherence to FAIR principles.
-
 ## Agree on Cost coverage and resources for Data Inclusion
 
 Negotiations take place with Funders and relevant stakeholders to secure the necessary financial and technical resources required to cover the costs associated with data preparation, harmonization, and long-term storage.
@@ -51,14 +43,11 @@ Negotiations take place with Funders and relevant stakeholders to secure the nec
 
 A thorough legal assessment is conducted to ensure the Data Provider has the appropriate lawful basis (e.g., under GDPR) to legitimately process and share the genomic and phenotypic data.
 
-## Sign agreements (Sharing and Joint Controllership)
+## Sign agreements, where applicable
 
-The foundational legal documents are executed between the Data Provider and other relevant Data Controllers. This formally establishes the joint responsibilities for data protection, security, and data subject rights.
+Based on the established legal basis, foundational legal and operational documents are executed to formally define responsibilities for data sharing, protection, and processing. Depending on the specific context, this involves several distinct agreements:
 
-## Sign data processing agreement
-
-A formal Data Processing Agreement (DPA) is signed between the Data Provider and the designated Service Providers who will be physically hosting or computationally processing the data on their behalf.
-
-## Sign Data Provider agreement for Data Preparation and Platform Provision
-
-The final operational agreements are executed with the Service Providers, officially authorizing the commencement of data harmonization, technical preparation, and the provisioning of the secure platform infrastructure for the newly onboarded data.
+- **Sharing agreement**: Executed with the Data Provider.
+- **Joint controllership agreement**: Executed with Another Data Provider to formally establish joint responsibilities for data protection, security, and data subject rights.
+- **Data processing agreement**: A formal Data Processing Agreement (DPA) is signed with the Data Controller for Disclosure.
+- **Agreement for Data Preparation and Platform Provision**: Operational agreements are executed with Service Providers, authorizing the commencement of data harmonization, technical preparation, and the provisioning of the secure platform infrastructure for the newly onboarded data.

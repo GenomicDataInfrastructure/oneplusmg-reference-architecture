@@ -1,5 +1,5 @@
 ---
-# SPDX-FileCopyrightText: 2025 PNED G.I.E.
+# SPDX-FileCopyrightText: 2026 PNED G.I.E.
 #
 # SPDX-License-Identifier: CC-BY-4.0
 
@@ -17,52 +17,44 @@ This section describes the dynamic behavior and specific scenarios involved in t
 
 ## Overview
 
-![Data Subject Onboarding](./assets/data_subject_onboarding_runtime.drawio.png)
-
-## Provide Templates for Information and Consent to Data Provider
-
-The National Coordination Point provides the Data Provider with standardized, legally compliant templates for patient information sheets and informed consent forms, ensuring consistency across the network.
-
-## Generate Information and Consent forms
-
-The Data Provider customizes the provided templates to generate the final information sheets and consent forms specific to their cohort, study, or clinical environment.
+![Data Subject Onboarding SIPOC](./assets/data_subject_onboarding_sipoc.drawio.png)
 
 ## Submit ethics review application
 
-The Data Provider submits the generated information and consent forms, along with the study protocol, to the relevant Ethics Committee for official review and approval.
+The Data Provider submits the signed agreements and study protocol to the relevant Ethics Committee for official review and approval, generating an Ethics Report.
 
-## Review ethics for data inclusion
+## Provide templates
 
-The Ethics Committee thoroughly reviews the application to ensure that the proposed data inclusion and secondary use of the data subjects' genomic information meet all strict ethical standards.
+The National Coordination Point provides the Data Provider with standardized, legally compliant templates for patient information and consent.
+
+## Generate Information and Consent forms
+
+The Data Provider customizes the provided templates to generate the final information sheets and consent forms specific to their cohort, study, or clinical environment, which are then shared with the National Coordination Point.
 
 ## Perform DPIA for Data Inclusion
 
-The Data Provider performs a Data Protection Impact Assessment (DPIA) to identify, assess, and mitigate any privacy risks associated with processing and sharing the data subjects' sensitive health and genomic data.
-
-## Notify National Data Authority
-
-The Data Provider notifies the National Data Authority (or Data Protection Authority) regarding the data processing activities and the outcomes of the DPIA, ensuring regulatory transparency.
+The Data Provider performs a Data Protection Impact Assessment (DPIA) based on the generated forms to identify, assess, and mitigate any privacy risks associated with processing and sharing the data subjects' sensitive health and genomic data. The resulting DPIA Report is submitted to the National Data Authority.
 
 ## Review DPIA
 
-The National Data Authority or relevant supervisory body reviews the submitted DPIA to confirm that all data protection risks have been adequately addressed and that the processing complies with GDPR and national laws.
+The National Data Authority or relevant supervisory body reviews the submitted DPIA Report to confirm that all data protection risks have been adequately addressed, providing a DPIA Report Review back to the Data Provider.
+
+## Review ethics for data inclusion
+
+The Ethics Committee thoroughly reviews the Ethics Report to ensure that the proposed data inclusion and secondary use of the data subjects' genomic information meet all strict ethical standards, providing an Ethics Report Review to the Data Provider.
 
 ## Establish Communication Channel (Recruitment)
 
-The Data Provider establishes secure and appropriate communication channels to reach out to potential data subjects for recruitment and to provide them with the necessary information about the initiative.
+Once the data inclusion has been approved (following both DPIA and Ethics reviews), the Data Provider establishes secure communication channels to define the recruitment scope for reaching out to potential data subjects, coordinating this scope with the National Coordination Point.
 
 ## Inform Data Subject
 
-The Data Provider officially informs the data subject about how their genomic and phenotypic data will be used, stored, and shared within the 1+MG federated network, using the approved information sheets.
+Based on the recruitment scope, the Data Provider officially informs the data subject about how their data will be used, stored, and shared within the federated network.
 
-## Collected consent for allele frequency calculation
+## Collected consent
 
-The data subject provides explicit consent specifically allowing their genomic data to be aggregated and used for calculating allele frequencies across the population.
+The Data Subject provides explicit consent, which is collected by the Data Provider. This typically encompasses specific permissions, such as:
 
-## Collected consent for subject-level data query
-
-The data subject provides explicit consent allowing authorized researchers to query and access their individual, subject-level genomic and phenotypic data within a secure processing environment.
-
-## Collected consent for data available through Genome EDIC Secondary Use Framework
-
-The data subject provides explicit, overarching consent for their data to be made available for secondary research purposes under the governance and legal framework established by the Genome EDIC.
+- Consent for allele frequency calculation
+- Consent for subject-level data query
+- Consent for data available through Genome EDIC Secondary Use Framework
